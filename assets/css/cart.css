@@ -1,0 +1,61 @@
+.cart .nav-cart {
+  background: #D9D9D9;
+  height: 60px;
+}
+.cart .nav-cart .container {
+  display: flex;
+  gap: 25px;
+  height: 100%;
+  align-items: center;
+}
+.cart .nav-cart .nav-cart-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.box-cart .cart-item > p {
+  margin-bottom: 50px;
+}
+.box-cart .cart-item-product {
+  gap: 20px;
+  margin-bottom: 15px;
+}
+.box-cart .cart-item-product-text {
+  gap: 8px;
+}
+.box-cart .cart-item-total {
+  width: 100%;
+  padding: 25px;
+  border: 1px solid #B4B3B3;
+  gap: 15px;
+}
+.box-cart .cart-item-total .sub-total {
+  padding: 20px 0;
+  border-top: 1px solid #B4B3B3;
+  border-bottom: 1px solid #B4B3B3;
+}
+.box-cart .cart-item-total button {
+  background: #E63D45;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  font-size: 115%;
+  border: 0;
+  outline: 0;
+}
+.box-cart .b1 {
+  display: flex;
+  align-items: start;
+  margin-bottom: 10px !important;
+  font-weight: 200;
+}
+.box-cart .b1 img {
+  width: 20px;
+}
+.box-cart .b1.more {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  align-items: center;
+}/*# sourceMappingURL=cart.css.map */

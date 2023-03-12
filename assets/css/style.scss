@@ -4,6 +4,13 @@ $gray: #838383;
 $brown: #614436;
 $brown2: #CEB086;
 $orange: #F7934D;
+@font-face {
+    font-family:be;
+    src:url('../font/BeVietnamPro-Black.ttf') format('truetype'),
+    url('../font/BeVietnamPro-Black.ttf') format('woff');
+    font-weight:normal;
+    font-style:normal;
+   }
 *
 {
     margin: 0;
@@ -14,6 +21,7 @@ body
 {
     font-size:16px;
     position: relative;
+    font-family:be;
 }
 .container
 {
@@ -269,7 +277,6 @@ header
     align-items: center;
     >h1
     {
-        text-transform: uppercase;
         font-weight: 500;
         font-size: 225%;
         margin-bottom: 35px;
@@ -573,7 +580,7 @@ footer
         p
         {
             display: block;
-            width:30%;
+            width:60%;
             text-align: center;
             font-size:125%;
             font-weight: 300;
