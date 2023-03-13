@@ -1,0 +1,129 @@
+.box-contact {
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.contact {
+  padding: 25px;
+  border: 5px solid #EDEDED;
+  position: relative;
+}
+.contact > h2 {
+  color: #000000;
+  font-size: 180%;
+}
+.contact-item {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  margin: 20px 0;
+}
+.contact-item > h3 {
+  font-size: 150%;
+}
+.contact .abs {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.letter {
+  padding-top: 100px;
+}
+.letter > h2 {
+  color: #000000;
+  font-size: 180%;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  position: relative;
+}
+.form .form-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  gap: 8px;
+}
+.form .form-item input {
+  background-color: #EDEDED;
+  outline: none;
+  border: 0;
+  height: 30px;
+  padding-left: 10px;
+}
+.form .textarea {
+  align-items: start;
+  width: 100%;
+  height: 100%;
+}
+.form .textarea textarea {
+  width: 100%;
+  height: 180px;
+  background-color: #EDEDED;
+}
+.form button {
+  margin-top: 30px;
+  background: #5DA8AF;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  font-size: 115%;
+  border-radius: 8px;
+  border: 0;
+  outline: 0;
+}
+
+.box-map .map {
+  margin-top: 25px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.border {
+  width: 100%;
+  height: 1px;
+  border-bottom: 3px solid #EDEDED;
+}
+
+.box-profile {
+  justify-content: space-between;
+}
+.box-profile .box-account .gray {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.profile {
+  margin-bottom: 50px;
+}
+.profile .form-item {
+  width: auto;
+  align-items: center;
+}
+.profile .form-item input {
+  width: 300px;
+  height: 50px;
+}
+.profile .form-item label {
+  display: inline-block;
+  min-width: 200px;
+}
+.profile .form-item .gender {
+  display: flex;
+  gap: 25px;
+}
+.profile .form-item .gender > div {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile .form-item .gender-radio {
+  width: 15px;
+}/*# sourceMappingURL=contact.css.map */
