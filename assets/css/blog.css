@@ -36,4 +36,29 @@
 }
 .box-new .box-new-nav p, .box-new .box-new-nav img {
   cursor: pointer;
+}
+
+.detail-blog .box-new-item h3 {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 200%;
+  margin: 15px 0;
+}
+.detail-blog p {
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 24px;
+}
+.detail-blog img {
+  margin: 25px 0;
+}
+.detail-blog a {
+  line-height: 24px;
+}
+.detail-blog .list {
+  margin: 15px 0;
+}
+.detail-blog .list li {
+  padding-left: 15px;
+  margin: 10px 0;
 }/*# sourceMappingURL=blog.css.map */
