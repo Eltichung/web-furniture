@@ -1,0 +1,41 @@
+.box-about {
+  margin-bottom: 60px;
+}
+.box-about-item > h3 {
+  font-weight: 600;
+  font-size: 150%;
+  margin: 50px 0 30px 0;
+}
+.box-about-item > p {
+  font-weight: 400;
+  font-size: 125%;
+  margin-bottom: 20px;
+}
+.box-about-item-content img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.box-about-item .box-about-item-content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-about-item .box-about-item-content-text img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.box-about-item #small {
+  width: auto;
+}
+.box-about-item .first {
+  display: flex;
+  justify-content: space-between;
+}
+.box-about-item .first img {
+  width: 45%;
+}
+.box-about-item .first .about-item-content-text {
+  width: 45%;
+}/*# sourceMappingURL=about.css.map */
