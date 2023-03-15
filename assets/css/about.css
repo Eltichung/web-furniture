@@ -38,4 +38,7 @@
 }
 .box-about-item .first .about-item-content-text {
   width: 45%;
+}
+.box-about-item .first .about-item-content-text p {
+  margin: 20px 0;
 }/*# sourceMappingURL=about.css.map */

@@ -28,7 +28,7 @@
     </div>
     <div class="tool container flex-r">
         <div class="tool-img col-xs-3">
-            <img src="./assets/img/logo.png" alt="">
+            <a href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
         </div>
         <div class="tool-item col-xs-9 flex-r ">
             <div class="tool-item-search flex-r">
@@ -39,7 +39,7 @@
             </div>
             <div class="tool-item-user flex-r">
                 <img src="./assets/img/user.png" alt="">
-                <p>Tài khoản</p>
+                <a href="./profile.html">Tài khoản</a>
             </div>
             <div class="tool-item-user flex-r">
                 <img src="./assets/img/cart.png" alt="">
@@ -55,7 +55,7 @@
     </div>
     <div class="menu-top">
         <ul class="menu container flex-r">
-            <li><a href="#">Trang chủ</a></li>
+            <li><a href="./index.html">Trang chủ</a></li>
             <li><a href="#" id="isShow">Danh mục sản phẩm <span><img src="./assets/img/arrow.png" alt=""></span>
                 <div class="menu-hide">
                     <div class="box-hide container flex-r">
@@ -195,7 +195,7 @@
         <h1>ƯU ĐÃI GIỚI HẠN</h1>
         <a href="#">Xem thêm</a>
         <div class="box-product owl-carousel owl-theme">
-            <div class="box-product-item ">
+            <div class="box-product-item">
                 <div class="box-product-item-img">
                     <img src="./assets/img/product.png" alt="">
                     <div class="img-ab">
@@ -650,7 +650,7 @@
                         <img src="./assets/img/Rectangle 88.png" alt="">
                     </div>
                     <h3>Minh Tâm Lê Nguyễn</h3>
-                    <div class="feeback- flex-r">
+                    <div class="feeback flex-r">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
@@ -664,7 +664,7 @@
                         <img src="./assets/img/Rectangle 88.png" alt="">
                     </div>
                     <h3>Minh Tâm Lê Nguyễn</h3>
-                    <div class="feeback- flex-r">
+                    <div class="feeback flex-r">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
@@ -681,7 +681,7 @@
                         <img src="./assets/img/Rectangle 88.png" alt="">
                     </div>
                     <h3>Đã mua hàng FURNICO.</h3>
-                    <div class="feeback- flex-r">
+                    <div class="feeback flex-r">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
@@ -698,7 +698,7 @@
                         <img src="./assets/img/Rectangle 88.png" alt="">
                     </div>
                     <h3>Tri Tuệ</h3>
-                    <div class="feeback- flex-r">
+                    <div class="feeback flex-r">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
@@ -882,5 +882,8 @@ $('.box-new').owlCarousel({
     }
     
 })})
+$('.box-product-item').click(function(){
+    window.location.href='./product.html'
+})
 </script>
 </html>
