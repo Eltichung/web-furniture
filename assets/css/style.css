@@ -213,6 +213,34 @@ header p {
 .tool .tool-item-user {
   align-items: center;
   gap: 15px;
+  position: relative;
+}
+.tool .tool-item-user .box-show {
+  display: none;
+  width: 250px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  z-index: 9999999999;
+}
+.tool .tool-item-user .box-show h4 {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 10px;
+  border-bottom: 1px solid #838383;
+}
+.tool .tool-item-user .box-show p {
+  display: block;
+  padding: 10px 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  cursor: pointer;
+}
+.tool .tool-item-user .box-show p:hover {
+  background-color: #D9D9D9;
 }
 .tool .tool-item .tool-item-icon:nth-child(4) {
   margin-top: -10px;

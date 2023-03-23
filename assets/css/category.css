@@ -1,0 +1,46 @@
+.category-main {
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.title-category {
+  margin-top: 60px;
+}
+
+.category-menu p {
+  margin-top: 25px;
+}
+
+.category {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+}
+.category-item {
+  cursor: pointer;
+  overflow: hidden;
+}
+.category-item img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+}
+.category-item h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150%;
+  display: block;
+  position: relative;
+  margin: 8px 0;
+}
+.category-item h2::after {
+  content: "";
+  bottom: -25px;
+  width: 25%;
+  height: 2px;
+  background-color: #F7934D;
+}
+.category-item p {
+  font-size: 80%;
+  font-weight: 400;
+}/*# sourceMappingURL=category.css.map */
