@@ -176,56 +176,71 @@
         <div class="banner-item">
             <img src="./assets/img/banner-2.png" alt="">   
         </div>
+        <div class="banner-item">
+            <img src="./assets/img/banner-3.png" alt="">   
+        </div>
     </div>
     <div class="box">
         <h1>Khám phá dòng sản phẩm nội thất của chúng tôi</h1>
         <div class="box-gallery">
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery1.png" alt="">
+                <img src="./assets/img/gallery11.png" alt="">
                 <p>Sofa</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery2.png" alt="">
+                <img src="./assets/img/gallery22.png" alt="">
                 <p>Beds</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery3.png" alt="">
+                <img src="./assets/img/gallery33.png" alt="">
                 <p>Dining</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery4.png" alt="">
+                <img src="./assets/img/gallery44.png" alt="">
                 <p>Wadrobes </p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery5.png" alt="">
+                <img src="./assets/img/gallery55.png" alt="">
                 <p>Recliners</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery6.png" alt="">
+                <img src="./assets/img/gallery66.png" alt="">
                 <p>Seating</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery7.png" alt="">
+                <img src="./assets/img/gallery77.png" alt="">
                 <p>Coffee Tables</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery8.png" alt="">
+                <img src="./assets/img/gallery88.png" alt="">
                 <p>TV Units</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery9.png" alt="">
+                <img src="./assets/img/gallery99.png" alt="">
                 <p>Shoes Racks</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery10.png" alt="">
+                <img src="./assets/img/gallery101.png" alt="">
                 <p>Study</p>
             </div>
             <div class="box-gallery-item flex-c">
-                <img src="./assets/img/gallery11.png" alt="">
+                <img src="./assets/img/gallery11a.png" alt="">
+                <img src="./assets/img/gallery111.png" alt="">
                 <p>Bookshelves</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery12.png" alt="">
+                <img src="./assets/img/gallery121.png" alt="">
                 <p>Lightining</p>
             </div>
         </div>
@@ -790,11 +805,24 @@
                   <p>Tết Dương lịch và Tết Nguyên đán 2023 đang cận kề, để chào đón năm mới, Nội Thất MOHO gửi đến quý khách hàng chương trình giảm ...</p>
                   <a href="#">XEM THÊM</a>
              </div>
+             <div class="box-new-item flex-c">
+                <div class="box-abs">
+                    <img src="./assets/img/Rectangle 100 (2).png" alt="">
+                    <div class="box-new-item-ab">
+                        <h3>07 ngày</h3>
+                        <h3>Flash Sale ưu đãi</h3>
+                        <h3>mua sắm</h3>
+                      </div>
+                </div>
+                <h3>07 ngày Flash Sale ưu đãi mua...</h3>
+                  <p>Tết Dương lịch và Tết Nguyên đán 2023 đang cận kề, để chào đón năm mới, Nội Thất MOHO gửi đến quý khách hàng chương trình giảm ...</p>
+                  <a href="#">XEM THÊM</a>
+             </div>
         </div>
     </div>
     <div class="box container">
         <h1>Khách hàng FURNICO. tại</h1>
-        <div class="box-logo flex-r">
+        <div class="box-logo flex-r owl-carousel owl-theme">
             <img src="./assets/img/logo1.png" alt="">
             <img src="./assets/img/logo2.png" alt="">
             <img src="./assets/img/logo3.png" alt="">
@@ -978,6 +1006,15 @@ View settings for more info. -->
     $(document).ready(function(){
 $('.banner').owlCarousel({
     items:1,
+    margin:0,
+    dots:false,
+    autoplay:true,
+    loop:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+})
+$('.box-logo').owlCarousel({
+    items:6,
     margin:0,
     dots:false,
     autoplay:true,

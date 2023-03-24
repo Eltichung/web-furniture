@@ -182,6 +182,10 @@ header
             }
         }
     }
+    &-menu
+    {
+        font-size: 90%;
+    }
     .box-hide-2
     {
         display: flex;
@@ -200,6 +204,19 @@ header
         gap: 15px;
         justify-content: center;
         align-items: center;
+        position: relative;
+        &:hover img:nth-child(2)
+        {
+            display: block;
+        }
+        &:hover img:nth-child(1)
+        {
+            display: none;
+        }
+        img:nth-child(2)
+        {
+            display: none;
+        }
         p
         {
             font-size: 125%;
@@ -685,6 +702,10 @@ header
     width:100%;
     justify-content: space-between;
     margin-bottom:80px;
+}
+.box-logo.owl-carousel .owl-item img {
+    display: block;
+    width: 50% !important;
 }
 footer
 {
