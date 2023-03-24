@@ -85,6 +85,8 @@
   font-size: 90%;
 }
 .product .box-product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px 32px;
 }
 .product .box-product-item > h3 {

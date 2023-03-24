@@ -111,6 +111,8 @@
     }
     .box-product
     {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 50px 32px;
     }
     .box-product-item

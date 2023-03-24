@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800");
 * {
   margin: 0;
   padding: 0;
@@ -186,6 +187,72 @@ header p {
   font-weight: 500;
 }
 
+.box-show1 {
+  display: none;
+  width: 450px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  z-index: 99999;
+  background-color: #fff;
+}
+.box-show1 .img-abs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 100%);
+  width: 15px;
+  height: 15px;
+}
+.box-show1 .cart-item-product {
+  padding: 8px 0;
+  gap: 15px;
+  position: relative;
+}
+.box-show1 .cart-item-product h3 {
+  font-weight: 500;
+  font-size: 100%;
+}
+.box-show1 .cart-item-product p {
+  font-size: 85%;
+}
+.box-show1 .cart1-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.box-show1 .cart1-btn button {
+  width: 45%;
+  color: #fff;
+  display: flex;
+  height: 40px;
+  border: 0;
+  outline: none;
+  border-radius: 8px;
+}
+.box-show1 .cart1-btn button a {
+  display: block;
+  height: 100%;
+  margin: auto;
+  line-height: 40px;
+  font-size: 125%;
+}
+.box-show1 .cart1-btn button:first-child {
+  background-color: #000;
+}
+.box-show1 .cart1-btn button:last-child {
+  background-color: #5DA8AF;
+}
+.box-show1 .cart1-p {
+  margin-top: 15px;
+}
+.box-show1 .product-cart {
+  padding: 15px 0;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
 .tool {
   align-items: end;
   margin-top: 20px;
@@ -214,6 +281,7 @@ header p {
   align-items: center;
   gap: 15px;
   position: relative;
+  cursor: pointer;
 }
 .tool .tool-item-user .box-show {
   display: none;
@@ -222,7 +290,7 @@ header p {
   top: 100%;
   left: 0;
   padding: 10px;
-  z-index: 9999999999;
+  z-index: 99999;
 }
 .tool .tool-item-user .box-show h4 {
   width: 90%;
@@ -231,7 +299,7 @@ header p {
   padding: 10px 10px;
   border-bottom: 1px solid #838383;
 }
-.tool .tool-item-user .box-show p {
+.tool .tool-item-user .box-show p, .tool .tool-item-user .box-show a {
   display: block;
   padding: 10px 30px;
   background: #FFFFFF;
@@ -239,7 +307,7 @@ header p {
   margin: 0 auto;
   cursor: pointer;
 }
-.tool .tool-item-user .box-show p:hover {
+.tool .tool-item-user .box-show p:hover, .tool .tool-item-user .box-show a:hover {
   background-color: #D9D9D9;
 }
 .tool .tool-item .tool-item-icon:nth-child(4) {
@@ -662,4 +730,271 @@ footer .footer-bot-ab2 span p {
 }
 footer .footer-bot-ab2 span img {
   width: 20px;
+}
+
+* {
+  outline-width: 0;
+  font-family: "Nunito" !important;
+}
+
+.modal1 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal1 header, .modal1 footer {
+  background: unset;
+  flex-direction: unset;
+  height: unset;
+}
+
+.modal-title {
+  margin: 20px 0 !important;
+  opacity: 1 !important;
+}
+
+#formContainer {
+  display: flex;
+  transition: 0.2s ease;
+  transition-delay: 0.3s;
+}
+#formContainer.toggle {
+  height: 550px;
+  transition-delay: 0s;
+}
+
+.formLeft {
+  background: #fff;
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.formLeft img {
+  display: block;
+  width: 400px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.formRight {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80%;
+}
+.formRight:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background: url("https://source.unsplash.com/2560x1440/daily") center/cover fixed;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  filter: blur(5px);
+}
+.formRight form {
+  position: relative;
+  padding: 25px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.formRight form header {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.formRight form header h1 {
+  margin: 0;
+  font-weight: 400;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.formRight form header p {
+  margin: 5px 0 0;
+  opacity: 0.5;
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.formRight form section label {
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+}
+.formRight form section label p {
+  color: #fff;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+  font-size: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.formRight form section label input {
+  width: 100%;
+  display: block;
+  border: none;
+  background: transparent;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 0 10px;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+.formRight form section label input:focus ~ .border {
+  transform: scale(1, 1);
+}
+.formRight form section label input:not(:-moz-placeholder-shown) ~ .border {
+  transform: scale(1, 1);
+}
+.formRight form section label input:not(:placeholder-shown) ~ .border {
+  transform: scale(1, 1);
+}
+.formRight form section label .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: scale(0, 1);
+  transition: 0.2s ease;
+}
+.formRight form section label:last-child {
+  margin-bottom: 0;
+}
+.formRight form section button {
+  background: #00897B;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.formRight form section button:hover {
+  background: #007f72;
+}
+.formRight form footer {
+  margin-top: 15px;
+  display: flex;
+}
+.formRight form footer button {
+  background: transparent;
+  padding: 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  flex: 1;
+}
+.formRight form footer button:hover {
+  opacity: 1;
+}
+.formRight form.otherForm {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: #fff;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 0;
+  padding: 25px 0;
+  transition: 0.2s ease;
+  transition-delay: 0.2s;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.formRight form.otherForm header {
+  color: #000;
+  opacity: 0;
+  transition: 0.2s ease;
+  transition-delay: 0s;
+}
+.formRight form.otherForm p {
+  color: #000;
+}
+.formRight form.otherForm section {
+  opacity: 0;
+  transition: 0.2s ease;
+  transition-delay: 0s;
+}
+.formRight form.otherForm footer {
+  border-top-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+}
+.formRight form.otherForm footer button {
+  color: #000;
+}
+.formRight form.otherForm input {
+  border-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+.formRight form.otherForm .border {
+  background: #000;
+}
+.formRight form.otherForm.toggle {
+  width: 100%;
+  padding: 25px;
+  transition-delay: 0s;
+}
+.formRight form.otherForm.toggle header, .formRight form.otherForm.toggle section, .formRight form.otherForm.toggle footer {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+
+#login-modal {
+  box-shadow: none;
+  z-index: 1000000000000000000000000 !important;
+}
+
+.modal {
+  display: none;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1000000000000000000000000 !important;
+  max-width: unset !important;
+  box-sizing: border-box;
+  width: 90%;
+  background: unset !important;
+  padding: 0 !important;
+  -o-box-shadow: unset !important;
+  -ms-box-shadow: unset !important;
+  box-shadow: unset !important;
+}
+
+.blocker {
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  z-index: 9999999999 !important;
+}
+
+#close-modal1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-50%, -50%);
+}
+
+.modal a.close-modal {
+  position: absolute;
+  top: 35px !important;
+  right: -12.5px !important;
 }/*# sourceMappingURL=style.css.map */

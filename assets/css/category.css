@@ -43,4 +43,18 @@
 .category-item p {
   font-size: 80%;
   font-weight: 400;
+}
+
+.box-new-nav {
+  transform: translateX(50%);
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.box-new-nav p, .box-new-nav img {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
 }/*# sourceMappingURL=category.css.map */
