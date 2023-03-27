@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/flexboxgrid.min.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 </head>
 <body>
@@ -28,7 +29,7 @@
     </div>
     <div class="tool container flex-r">
         <div class="tool-img col-xs-3">
-            <img src="./assets/img/logo.png" alt="">
+            <a href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
         </div>
         <div class="tool-item col-xs-9 flex-r ">
             <div class="tool-item-search flex-r">
@@ -37,13 +38,51 @@
                     <img src="./assets/img/search.png" alt="">
                 </div>
             </div>
-            <div class="tool-item-user flex-r">
+            <div class="tool-item-user flex-r" id="account">
                 <img src="./assets/img/user.png" alt="">
                 <p>Tài khoản</p>
+                <div class="box-show">
+                    <h4>Xin chào Vy Anh</h4>
+                        <a data-modal="#login-modal">Đăng kí</a>
+                        <p>Đăng nhập</p>
+                        <p>Tài khoản của tôi</p>
+                        <p>Đơn hàng của tôi</p>
+                </div>
             </div>
-            <div class="tool-item-user flex-r">
+            <div class="tool-item-user flex-r" id="cartClick">
                 <img src="./assets/img/cart.png" alt="">
-                <a href="./cart.html">Giỏ hàng</a>
+                <p>Giỏ hàng</p>
+                <div class="box-show1">
+                    <h3>Giỏ hàng</h3>
+                    <div class="product-cart">
+                        <div class="cart-item-product flex-r">
+                            <img src="./assets/img/cart-1.png" alt="">
+                            <div class="cart-item-product-text flex-c">
+                                <h3>Bàn học Gỗ Tràm Tự Nhiên MOHO NYBORG 301</h3>
+                                <p class="gray">1,090,000 đ</span></p>
+                                <p class="gray">Be</p>
+                            </div>
+                            <img src="./assets/img/close.png" alt="" class="img-abs">
+                        </div>
+                        <div class="cart-item-product flex-r">
+                            <img src="./assets/img/cart-1.png" alt="">
+                            <div class="cart-item-product-text flex-c">
+                                <h3>Bàn học Gỗ Tràm Tự Nhiên MOHO NYBORG 301</h3>
+                                <p class="gray">1,090,000 đ</span></p>
+                                <p class="gray">Be</p>
+                            </div>
+                            <img src="./assets/img/close.png" alt="" class="img-abs">
+                        </div>
+                    </div>
+                    <div class="cart1-p flex-r between-xs">
+                        <p>Tổng tiền</p>
+                        <p class="orange">8,490,000₫</p>
+                    </div>
+                    <div class="cart1-btn">
+                        <button><a href="./cart.html">Xem giỏ hàng</a></button>
+                        <button><a href="./pay.html">Thanh toán</a></button>
+                    </div>
+                </div>
             </div>
             <div class="tool-item-icon flex-r">
                 <img src="./assets/img/heart.png" alt="">
@@ -55,7 +94,7 @@
     </div>
     <div class="menu-top">
         <ul class="menu container flex-r">
-            <li><a href="#">Trang chủ</a></li>
+            <li><a href="./index.html">Trang chủ</a></li>
             <li><a href="#" id="isShow">Danh mục sản phẩm <span><img src="./assets/img/arrow.png" alt=""></span>
                 <div class="menu-hide">
                     <div class="box-hide container flex-r">
@@ -137,56 +176,71 @@
         <div class="banner-item">
             <img src="./assets/img/banner-2.png" alt="">   
         </div>
+        <div class="banner-item">
+            <img src="./assets/img/banner-3.png" alt="">   
+        </div>
     </div>
     <div class="box">
         <h1>Khám phá dòng sản phẩm nội thất của chúng tôi</h1>
         <div class="box-gallery">
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery1.png" alt="">
+                <img src="./assets/img/gallery11.png" alt="">
                 <p>Sofa</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery2.png" alt="">
+                <img src="./assets/img/gallery22.png" alt="">
                 <p>Beds</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery3.png" alt="">
+                <img src="./assets/img/gallery33.png" alt="">
                 <p>Dining</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery4.png" alt="">
+                <img src="./assets/img/gallery44.png" alt="">
                 <p>Wadrobes </p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery5.png" alt="">
+                <img src="./assets/img/gallery55.png" alt="">
                 <p>Recliners</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery6.png" alt="">
+                <img src="./assets/img/gallery66.png" alt="">
                 <p>Seating</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery7.png" alt="">
+                <img src="./assets/img/gallery77.png" alt="">
                 <p>Coffee Tables</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery8.png" alt="">
+                <img src="./assets/img/gallery88.png" alt="">
                 <p>TV Units</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery9.png" alt="">
+                <img src="./assets/img/gallery99.png" alt="">
                 <p>Shoes Racks</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery10.png" alt="">
+                <img src="./assets/img/gallery101.png" alt="">
                 <p>Study</p>
             </div>
             <div class="box-gallery-item flex-c">
-                <img src="./assets/img/gallery11.png" alt="">
+                <img src="./assets/img/gallery11a.png" alt="">
+                <img src="./assets/img/gallery111.png" alt="">
                 <p>Bookshelves</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery12.png" alt="">
+                <img src="./assets/img/gallery121.png" alt="">
                 <p>Lightining</p>
             </div>
         </div>
@@ -195,7 +249,7 @@
         <h1>ƯU ĐÃI GIỚI HẠN</h1>
         <a href="#">Xem thêm</a>
         <div class="box-product owl-carousel owl-theme">
-            <div class="box-product-item ">
+            <div class="box-product-item">
                 <div class="box-product-item-img">
                     <img src="./assets/img/product.png" alt="">
                     <div class="img-ab">
@@ -650,7 +704,7 @@
                         <img src="./assets/img/Rectangle 88.png" alt="">
                     </div>
                     <h3>Minh Tâm Lê Nguyễn</h3>
-                    <div class="feeback- flex-r">
+                    <div class="feeback flex-r">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
@@ -664,7 +718,7 @@
                         <img src="./assets/img/Rectangle 88.png" alt="">
                     </div>
                     <h3>Minh Tâm Lê Nguyễn</h3>
-                    <div class="feeback- flex-r">
+                    <div class="feeback flex-r">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
@@ -673,15 +727,12 @@
                     </div>
                     <p class="gray">Rất ưng ý nhé</p>
                 </div>
-            
-       
-            
                 <div class="box-product-item col-xs-">
                     <div class="box-product-item-img">
                         <img src="./assets/img/Rectangle 88.png" alt="">
                     </div>
                     <h3>Đã mua hàng FURNICO.</h3>
-                    <div class="feeback- flex-r">
+                    <div class="feeback flex-r">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
@@ -698,7 +749,7 @@
                         <img src="./assets/img/Rectangle 88.png" alt="">
                     </div>
                     <h3>Tri Tuệ</h3>
-                    <div class="feeback- flex-r">
+                    <div class="feeback flex-r">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
                         <img src="./assets/img/Vector.png" alt="">
@@ -754,11 +805,24 @@
                   <p>Tết Dương lịch và Tết Nguyên đán 2023 đang cận kề, để chào đón năm mới, Nội Thất MOHO gửi đến quý khách hàng chương trình giảm ...</p>
                   <a href="#">XEM THÊM</a>
              </div>
+             <div class="box-new-item flex-c">
+                <div class="box-abs">
+                    <img src="./assets/img/Rectangle 100 (2).png" alt="">
+                    <div class="box-new-item-ab">
+                        <h3>07 ngày</h3>
+                        <h3>Flash Sale ưu đãi</h3>
+                        <h3>mua sắm</h3>
+                      </div>
+                </div>
+                <h3>07 ngày Flash Sale ưu đãi mua...</h3>
+                  <p>Tết Dương lịch và Tết Nguyên đán 2023 đang cận kề, để chào đón năm mới, Nội Thất MOHO gửi đến quý khách hàng chương trình giảm ...</p>
+                  <a href="#">XEM THÊM</a>
+             </div>
         </div>
     </div>
     <div class="box container">
         <h1>Khách hàng FURNICO. tại</h1>
-        <div class="box-logo flex-r">
+        <div class="box-logo flex-r owl-carousel owl-theme">
             <img src="./assets/img/logo1.png" alt="">
             <img src="./assets/img/logo2.png" alt="">
             <img src="./assets/img/logo3.png" alt="">
@@ -837,14 +901,120 @@
                 <p>Copyright © 2023 NỘI THẤT FURNICO.</p>
             </div>
     </footer>
-   
+
+    <!-- modal -->
+    <!-- JQUERY AND NORMALIZED CSS INSTALLED
+View settings for more info. -->
+<!-- Login modal embedded in page -->
+<div id="login-modal" class="modal">
+    <div class="modal1">
+        <div id="formContainer">
+        
+            <div class="formLeft">
+                <img src="./assets/img/index1.png">
+            </div>
+            <div class="formRight">
+                <!-- Forgot password form -->
+                <form id="forgot" class="otherForm">
+                    <header>
+                        <h1>Quên mật khẩu</h1>
+                        <p>Vui lòng nhập địa chỉ email đã đăng ký của bạn để đặt lại mật khẩu</p>
+                    </header>
+                    <section>
+                        <label>
+                            <p>Email</p>
+                            <input type="email" placeholder=" ">
+                            <div class="border"></div>
+                        </label>
+                        <button type="button">Gửi</button>
+                    </section>
+                    <footer>
+                        <button type="button" class="forgotBtn">Quay lại</button>
+                    </footer>
+                </form>
+        
+                <!-- Login form -->
+                <form id="login">
+                    <header>
+                        <h1>Welcome to FURNICO.</h1>
+                        <p class="modal-title">Đăng nhập để khám phá những thiết kế tuyệt vời và nhận ưu đãi tuyệt vời</p>
+                    </header>
+                    <section>
+                        <label>
+                            <p>Tài khoản</p>
+                            <input type="text" placeholder=" ">
+                            <div class="border"></div>
+                        </label>
+                        <label>
+                            <p>Mật Khẩu</p>
+                            <input type="password" placeholder=" ">
+                            <div class="border"></div>
+                        </label>
+                        <button type="button">Đăng nhập</button>
+                    </section>
+                    <footer>
+                        <button type="button" class="forgotBtn">Quên mật khẩu?</button>
+                        <button type="button" class="registerBtn">Đăng kí?</button>
+                    </footer>
+                </form>
+        
+            <!-- Register form -->
+                <form id="register" class="otherForm">
+                    <header>
+                        <h1>Đăng kí tài khoản</h1>
+                        <p>Trở thành nhà tiêu dùng thông thái</p>
+                    </header>
+                    <section>
+                        <label>
+                            <p>Họ và tên</p>
+                            <input type="text" placeholder=" ">
+                            <div class="border"></div>
+                        </label>
+                        <label>
+                            <p>Email</p>
+                            <input type="email" placeholder=" ">
+                            <div class="border"></div>
+                        </label>
+                        <label>
+                            <p>Mật khẩu</p>
+                            <input type="password" placeholder=" ">
+                            <div class="border"></div>
+                        </label>
+                        <label>
+                            <p>Xác nhận mật khẩu</p>
+                            <input type="password" placeholder=" ">
+                            <div class="border"></div>
+                        </label>
+                        <button type="button">Đăng kí</button>
+                    </section>
+                    <footer>
+                        <button type="button" class="registerBtn">Quay lại</button>
+                    </footer>
+                </form>
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+
 </body>
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/owl.carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <script>
     $(document).ready(function(){
 $('.banner').owlCarousel({
     items:1,
+    margin:0,
+    dots:false,
+    autoplay:true,
+    loop:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+})
+$('.box-logo').owlCarousel({
+    items:6,
     margin:0,
     dots:false,
     autoplay:true,
@@ -862,7 +1032,7 @@ $('.box-product').owlCarousel({
             items:4
         },
         600:{
-            items:41
+            items:4
         },
         1000:{
             items:4
@@ -882,5 +1052,39 @@ $('.box-new').owlCarousel({
     }
     
 })})
+$('.box-product-item').click(function(){
+    window.location.href='./product.html'
+})
+$("#account").click(function() {
+        $(".box-show").toggle(300);
+     });
+$("#cartClick").click(function() {
+        $(".box-show1").toggle(300);
+     });
+
+     //modal
+     $(function() {
+    $('a[data-modal]').on('click', function() {
+      $($(this).data('modal')).modal({
+    fadeDuration: 250
+  });
+      return false;
+    });
+  });
+     // jQuery
+$(function() {
+
+// Switch to Forgot Password
+$('.forgotBtn').click(function() {
+    $('#forgot').toggleClass('toggle');
+});
+
+// Switch to Register
+$('.registerBtn').click(function() {
+    $('#register, #formContainer').toggleClass('toggle');
+});
+
+});
+
 </script>
 </html>

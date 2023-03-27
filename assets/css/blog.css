@@ -28,15 +28,6 @@
 .box-new .box-new-item.col-xs-8 .box-new-item-post p {
   margin-bottom: 30px;
 }
-.box-new .box-new-nav {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  justify-content: center;
-}
-.box-new .box-new-nav p, .box-new .box-new-nav img {
-  cursor: pointer;
-}
 
 .detail-blog .box-new-item h3 {
   font-style: normal;
@@ -61,4 +52,17 @@
 .detail-blog .list li {
   padding-left: 15px;
   margin: 10px 0;
+}
+
+.box-new .box-new-nav {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.box-new .box-new-nav p, .box-new .box-new-nav img {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
 }/*# sourceMappingURL=blog.css.map */

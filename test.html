@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./assets/css/flexboxgrid.min.css">
+    <link rel="stylesheet" href="./assets/css/test.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containter">
+        <div class="tabs">
+            <ul id="tabs-nav">
+              <li><a href="#tab1">Bob</a></li>
+              <li><a href="#tab2">Dante</a></li>
+              <li><a href="#tab3">Randall</a></li>
+              <li><a href="#tab4">Jay</a></li>
+            </ul> <!-- END tabs-nav -->
+            <div id="tabs-content">
+              <div id="tab1" class="tab-content">
+                <h2>Ghế Sofa Gỗ Cao Su Tự Nhiên FURNICO. 601</h2>
+                <h3>1.Thông số kỹ thuật</h3>
+                <img src="./assets/img/tab-1.png" id="img1"alt="">
+                <h3>2.Chi tiết vật liệu</h3>
+                <div class="list-img">
+                    <img src="./assets/img/tab-2.png" alt="">
+                    <img src="./assets/img/tab-3.png" alt="">
+                    <img src="./assets/img/tab-4.png" alt="">
+                    <img src="./assets/img/tab-5.png" alt="">
+                </div>
+              </div>
+              <div id="tab2" class="tab-content">
+                <h2>Dante Hicks</h2>
+                <p>"My friend here's trying to convince me that any independent contractors who were working on the uncompleted Death Star were innocent victims when it was destroyed by the Rebels."</p>
+              </div>
+              <div id="tab3" class="tab-content">
+                <p><span><img src="./assets/img/tab-6.png" alt=""></span>Các sản phẩm nội thất tại FURNICO. đa số đều được sản xuất tại nhà máy của công ty cổ phần xây dựng kiến trúc AA với đội ngũ nhân viên và công nhân ưu tú cùng cơ sở vật chất hiện đại (http://www.aacorporation.com/). FURNICO. đã kiểm tra kỹ lưỡng từ nguồn nguyên liệu cho đến sản phẩm hoàn thiện cuối cùng</p>
+                <p><span><img src="./assets/img/tab-6.png" alt=""></span>FURNICO. bảo hành một năm cho các trường hợp có lỗi về kỹ thuật trong quá trình sản xuất hay lắp đặt.</p>
+                <p><span><img src="./assets/img/tab-6.png" alt=""></span>Quý khách không nên tự sửa chữa mà hãy báo ngay cho FURNICO. qua hotline: 1800 7200.</p>
+                <p><span><img src="./assets/img/tab-6.png" alt=""></span>Sau thời gian hết hạn bảo hành, nếu quý khách có bất kỳ yêu cầu hay thắc mắc thì vui lòng liên hệ với FURNICO. để được hướng dẫn và giải quyết các vấn đề gặp phải.</p>
+                <h3>TUY NHIÊN FURNICO. KHÔNG BẢO HÀNH CHO CÁC TRƯỜNG HỢP SAU:</h3>
+                <p><span><img src="./assets/img/tab-6.png" alt=""></span>Khách hàng tự ý sửa chữa khi sản phẩm bị trục trặc mà không báo cho FURNICO..</p>
+                <p><span><img src="./assets/img/tab-6.png" alt=""></span>Sản phẩm được sử dụng không đúng quy cách của sổ bảo hành (được trao gửi khi quý khách mua sản phẩm) gây nên trầy xước, móp, dơ bẩn hay mất màu.</p>
+                <p><span><img src="./assets/img/tab-6.png" alt=""></span>Sản phẩm bị biến dạng do môi trường bên ngoài bất bình thường (quá ẩm, quá khô, mối hay do tác động từ các thiết bị điện nước, các hóa chất hay dung môi khách hàng sử dụng không phù hợp).</p>
+                <p><span><img src="./assets/img/tab-6.png" alt=""></span>Sản phẩm hết hạn bảo hành.</p>
+                <p><span><img src="./assets/img/tab-6.png" alt=""></span>Sản phẩm không có phiếu bảo hành của FURNICO.</p>
+              </div>
+              <div id="tab4" class="tab-content">
+                <h3>GIAO HÀNG TẬN NƠI</h3>
+                <p><span></span>Khách hàng tự ý sửa chữa khi sản phẩm bị trục trặc mà không báo cho FURNICO..</p>
+                <p><span></span>FURNICO. cung cấp dịch vụ giao hàng tận nơi, lắp ráp và sắp xếp vị trí theo đúng ý muốn của quý khách:</p>
+                <p><span></span>- MIỄN PHÍ giao hàng trong các Quận nội thành Tp.Hồ Chí Minh và Hà Nội, áp dụng cho các đơn hàng trị giá trên 10 triệu.</p>
+                <p><span></span>- - Đối với khu vực các tỉnh lân cận: Tính phí hợp lý theo dựa trên quãng đường vận chuyển</p>
+            
+              </div>
+            </div> 
+          </div> 
+    </div>
+</body>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/owl.carousel.js"></script>
+<script>
+
+$('#tabs-nav li:first-child').addClass('active');
+$('.tab-content').hide();
+$('.tab-content:first').show();
+
+
+$('#tabs-nav li').click(function(){
+  $('#tabs-nav li').removeClass('active');
+  $(this).addClass('active');
+  $('.tab-content').hide();
+  
+  var activeTab = $(this).find('a').attr('href');
+  $(activeTab).fadeIn();
+  return false;
+});
+</script>
+</html>

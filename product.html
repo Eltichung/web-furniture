@@ -12,8 +12,9 @@
     <link type="text/css" rel="stylesheet" href="./assets/css/cart.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/about.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/blog.css">
+    <link type="text/css" rel="stylesheet" href="./assets/css/product.css">
 </head>
-<body class="cart">
+<body class="product">
     <header>
         <p>FREESHIP TP.HCM, Hà Nội, Biên Hòa và một số khu vực tại Bình Dương. Ngập tràn mã ưu đãi từ 50K đến 500K.</p>
     </header>
@@ -30,7 +31,7 @@
     </div>
     <div class="tool container flex-r">
         <div class="tool-img col-xs-3">
-            <img src="./assets/img/logo.png" alt="">
+            <a href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
         </div>
         <div class="tool-item col-xs-9 flex-r ">
             <div class="tool-item-search flex-r">
@@ -41,11 +42,11 @@
             </div>
             <div class="tool-item-user flex-r">
                 <img src="./assets/img/user.png" alt="">
-                <p>Tài khoản</p>
+                <a href="./profile.html">Tài khoản</a>
             </div>
             <div class="tool-item-user flex-r">
                 <img src="./assets/img/cart.png" alt="">
-                <p>Tài khoản</p>
+                <a href="./cart.html">Giỏ hàng</a>
             </div>
             <div class="tool-item-icon flex-r">
                 <img src="./assets/img/heart.png" alt="">
@@ -55,7 +56,82 @@
             </div>
         </div>
     </div>
-
+    <div class="menu-top">
+        <ul class="menu container flex-r">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="#" id="isShow">Danh mục sản phẩm <span><img src="./assets/img/arrow.png" alt=""></span>
+                <div class="menu-hide">
+                    <div class="box-hide container flex-r">
+                        <div class="box-hide-item col-xs-3">
+                            <img src="./assets/img/menu1.png" alt="">
+                            <h3>Phòng khách</h3>
+                            <ul class="box-hide-menu">
+                                <li>Ghế Sofa</li>
+                                <li>Bàn Sofa - Bàn Cafe - Bàn Trà</li>
+                                <li>Tủ Kệ TV</li>
+                                <li>Tủ Gìay - Tủ Trang Trí</li>
+                                <li>Ghế Tựa</li>
+                            </ul>
+                        </div>
+                        <div class="box-hide-item col-xs-3">
+                            <img src="./assets/img/menu2.png" alt="">
+                            <h3>Phòng ngủ</h3>
+                            <ul class="box-hide-menu">
+                                <li>Tủ quần áo</li>
+                                <li>Bàn Trang Điểm</li>
+                                <li>Giường Ngủ</li>
+                                <li>Tủ Đầu Giường</li>
+                            </ul>
+                        </div>
+                        <div class="box-hide-item col-xs-3">
+                            <img src="./assets/img/menu3.png" alt="">
+                            <h3>Phòng bếp</h3>
+                            <ul class="box-hide-menu">
+                                <li>Bộ Bàn ăn</li>
+                                <li>Bàn ăn</li>
+                                <li>Ghế ăn</li>
+                                <li>Tủ Bếp</li>
+                            </ul>
+                        </div>
+                        <div class="box-hide-item col-xs-3">
+                            <img src="./assets/img/menu4.png" alt="">
+                            <h3>Phòng làm việc</h3>
+                            <ul class="box-hide-menu">
+                                <li>Tủ & Kệ</li>
+                                <li>Bàn Làm Việc</li>
+                                <li>Ghế Văn Phòng</li>
+                            </ul>
+                        </div>
+                        <div class="box-hide-item col-xs-3">
+                            <img src="./assets/img/menu5.png" alt="">
+                            <h3>Bộ sưu tập</h3>
+                            <div class="box-hide-2">
+                                <ul class="box-hide-menu">
+                                    <li>KOGE Collection</li>
+                                    <li>KOLDING Collection</li>
+                                    <li>FIJI Collection</li>
+                                    <li>CABO Collection</li>
+                                    <li>OSAKA Collection</li>
+                                </ul>
+                                <ul class="box-hide-menu">
+                                   <li>ELEGANCE Collection</li>
+                                   <li>POP Collection</li>
+                                   <li>BỤI Collection</li>
+                                   <li>DUBAI Collection</li>
+                                   <li>VIENNA Collection</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a></li>
+            <li><a href="./blog.html">Blog <span><img src="./assets/img/arrow.png" alt=""></span></a></li>
+            <li><a href="./about.html">Về chúng tôi</a></li>
+            <li><a href="./contact.html">Liên hệ</a></li>
+        </ul>
+        
+       
+    </div>
     <div class="nav-cart">
         <div class="container">
             <div class="nav-cart-item">
@@ -63,15 +139,15 @@
                 <img src="./assets/img/arrow-right.png" alt="">
             </div>
             <div class="nav-cart-item">
-                <a href="./cart.html" class="gray">About us</a>
+                <a href="./cart.html" class="gray">Sản phẩm</a>
             </div>
         </div>
     </div>
-    <div class="box box-new container flex-r detail-blog">
-        <h1>GHẾ SOFA</h1>
-        <div class="flex-r between-xs">
-           <div class="box-new-item col-xs-3">
-                <div class="box-1">
+    <div class="box container flex-r">
+        <h2>GHẾ SOFA</h2>
+        <div class="flex-r between-xs box-detail-product">
+            <div class="box-new-item col-xs-3">
+                <div class="box-1 flex-r">
                     <img src="./assets/img/product-1.png" alt="">
                     <h3>Danh mục</h3>
                 </div>
@@ -95,24 +171,27 @@
                         <img src="./assets/img/product-11.png" alt="" />
                         <img src="./assets/img/product-12.png" alt="" />
                         <img src="./assets/img/product-13.png" alt="" />
+                        <img src="./assets/img/product-14.png" alt="" />
                     </div>
                 </div>
                 <div class="box-4">
                     <h3>Kích thước</h3>
-                    <div class="box-4-item">
-                        <p>90cm</p> 
-                    </div>
-                    <div class="box-4-item">
-                        <p>1m2</p> 
-                    </div>
-                    <div class="box-4-item">
-                        <p>1m4</p> 
-                    </div>
-                    <div class="box-4-item">
-                        <p>1m8</p> 
+                    <div class="box-4-grid">
+                        <div class="box-4-item">
+                            <p>90cm</p>
+                        </div>
+                        <div class="box-4-item">
+                            <p>1m2</p>
+                        </div>
+                        <div class="box-4-item">
+                            <p>1m4</p>
+                        </div>
+                        <div class="box-4-item">
+                            <p>1m8</p>
+                        </div>
                     </div>
                 </div>
-                <div class="box-4">
+                <div class="box-5">
                     <h3>Giá sản phẩm</h3>
                     <div class="checkbox">
                         <input type="checkbox">
@@ -120,7 +199,7 @@
                     </div>
                     <div class="checkbox">
                         <input type="checkbox">
-                        <label for="">Dưới 500,000 đ500,000 đ - 1,000,000 đ </label>
+                        <label for="">500,000 đ - 1,000,000 đ </label>
                     </div>
                     <div class="checkbox">
                         <input type="checkbox">
@@ -136,7 +215,830 @@
                     </div>
                 </div>
            </div>
-           <div class="box-new-item col-xs-8">
+           <div class="box-new-item col-xs-9">
+            <div class="wrapper-product owl-carousel">
+                <div class="box-product to">
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-product">
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-product-item ">
+                        <div class="box-product-item-img">
+                            <img src="./assets/img/product.png" alt="">
+                            <div class="img-ab">
+                                <div class="sell">
+                                    <p>-10%</p>
+                                </div>
+                                <div class="product-heart">
+                                    <img src="./assets/img/product-heart.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Ghế Ăn Gỗ Cao Su Tự Nhiên FURNICO ODESSA</h3>
+                        <div class="box-product-item-cost flex-r">
+                            <p class="col-xs-6">1,090,000 đ</p>
+                            <p class="col-xs-6 gray line">1,290,000 đ</p>
+                        </div>
+                        <div class="box-product-item-start flex-r between-xs">
+                            <div class="col-xs-6 flex-r">
+                                <p class="orange">4.8</p>
+                                <img src="./assets/img/start.png" alt="">
+                                <p class="black">(16)</p>
+                            </div>
+                            <p class="col-xs-6">Đã bán 346</p>
+                        </div>
+                        <div class="box-product-item-more flex-r between-xs">
+                            <div>
+                                <img src="./assets/img/product-more.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/img/product-cart.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
            </div>
        </div>
        
@@ -213,15 +1115,11 @@
 <script src="./assets/js/jquery.min.js"></script>
 <script src="./assets/js/owl.carousel.js"></script>
 <script>
-        $(document).ready(function(){
-$('.banner').owlCarousel({
+$('.wrapper-product').owlCarousel({
     items:1,
-    margin:0,
-    dots:false,
-    autoplay:true,
+    margin:32,
+    nav:false,
     loop:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-})})
+})
     </script>
 </html>
