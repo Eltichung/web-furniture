@@ -1,3 +1,7 @@
+.box-sli {
+  margin-top: 35px;
+}
+
 .thumnai #slider {
   box-shadow: 0 0 3px #aaa;
   border-radius: 5px;
@@ -73,7 +77,16 @@
      object-position: center;
 }
 
-.lSSlideWrapper, .lSSlideWrapper .lSFade {
+.lSSlideWrapper {
+  height: 600px !important;
+}
+
+.lSSlideWrapper li {
+  height: 600px !important;
+}
+
+.lSSlideWrapper,
+.lSSlideWrapper .lSFade {
   position: relative;
   margin-left: 70px;
 }
@@ -81,4 +94,250 @@
 .lSSlideOuter.vertical .lSGallery {
   left: 0;
   top: 0;
+}
+
+/* Tabs */
+.tabs {
+  margin-top: 30px;
+  width: 100%;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 50px;
+}
+
+ul#tabs-nav {
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  overflow: auto;
+  background: #D9D9D9;
+  border: 1px solid #B4B3B3;
+  border-bottom: 0px;
+}
+
+ul#tabs-nav li {
+  float: left;
+  font-weight: bold;
+  margin-right: 2px;
+  padding: 8px 10px;
+  border-radius: 5px 5px 5px 5px;
+  /*border: 1px solid #d5d5de;
+  border-bottom: none;*/
+  cursor: pointer;
+}
+
+ul#tabs-nav li:hover,
+ul#tabs-nav li.active {
+  background-color: #5DA8AF;
+}
+ul#tabs-nav li:hover a,
+ul#tabs-nav li.active a {
+  color: #fff;
+}
+
+#tabs-nav li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.tab-content {
+  padding: 10px;
+  border: 1px solid #B4B3B3;
+  background-color: #FFF;
+}
+
+#tab1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+#tab1 .bold {
+  margin-top: 30px;
+}
+#tab1 p {
+  margin-bottom: 20px;
+}
+#tab1 h2 {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 250%;
+  margin: 40px;
+}
+#tab1 h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 200%;
+  margin-bottom: 50px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 20px;
+}
+#tab1 #img1 {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#tab1 .list-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+}
+#tab1 .list-img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#tab3 p {
+  display: flex;
+  align-items: start;
+}
+#tab3 img {
+  width: 15px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+#tab3 p {
+  margin: 8px 0;
+}
+#tab3 h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 125%;
+}
+
+.t1 {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+.t1 p:nth-child(2) {
+  padding-left: 100px;
+}
+
+.t2 {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 10px 0;
+}
+.t2 p:nth-child(1) {
+  padding: 10px;
+  display: block;
+  background: #EDEDED;
+}
+
+.img-1 {
+  height: 140px;
+}
+
+.btnd {
+  width: 100%;
+  height: 57px;
+  display: block;
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.b1 {
+  background: #5DA8AF;
+}
+
+.b2 {
+  background: #F7934D;
+}
+
+.b3 {
+  background: #4B4B4B;
+}
+
+.tab2-t1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab2-t1 > div {
+  display: flex;
+  gap: 15px;
+}
+.tab2-t1 > div p {
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid #000;
+}
+.tab2-t1 > div p:nth-child(2) {
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.tab2-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 30px;
+}
+.tab2-box .col-xs-3 {
+  padding-left: 70px;
+  box-sizing: unset;
+  display: flex;
+  align-items: center;
+}
+.tab2-box .col-xs-3 p:nth-child(1) {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 100%;
+  background-color: #F2F2F2;
+}
+.tab2-box > h2 {
+  padding-left: 15px;
+}
+.tab2-box .border {
+  border-left: 1px solid #B4B3B3;
+  padding-left: 15px;
+}
+.tab2-box-img {
+  display: flex;
+  justify-content: space-between;
+}
+.tab2-box-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+.tab2-box-filter p:nth-child(1) {
+  background-color: unset;
+}
+.tab2-box-filter p {
+  display: block;
+  padding: 10px 15px;
+  background-color: #F2F2F2;
+  border-radius: 5px;
+}
+.tab2-box .action {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.tab2-box .action p:nth-child(1) {
+  padding: 5px 10px;
+  border: 1px solid #000;
+}
+.tab2-box .tab2-box-feedback p {
+  margin: 5px 0;
+}
+
+.box-cs {
+  padding-top: 20px;
+  border-top: 1px solid #BDBDBD;
 }/*# sourceMappingURL=detailProduct.css.map */

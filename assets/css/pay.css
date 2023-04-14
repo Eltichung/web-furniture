@@ -222,7 +222,7 @@
 }
 .pay button {
   background: #5DA8AF;
-  width: 170px;
+  width: 200px;
   height: 60px;
   outline: none;
   border: 0;
@@ -269,6 +269,15 @@
 .pay .pay-7 {
   padding-bottom: 20px;
   border-bottom: 1px solid #CCCCCC;
+}
+.pay .mr {
+  margin: 35px 0 25px 0;
+}
+.pay .btn3 {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .success .infor {

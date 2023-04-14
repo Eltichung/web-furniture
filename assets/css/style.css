@@ -46,6 +46,12 @@ li {
   color: #F7934D;
 }
 
+.bold {
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+}
+
 .black {
   color: #000000;
 }
@@ -66,7 +72,6 @@ header p {
   text-align: center;
   align-items: center;
   color: #fff;
-  line-height: 60px;
   font-weight: 500;
   font-size: 100%;
 }
@@ -312,7 +317,8 @@ header p {
   padding: 10px 10px;
   border-bottom: 1px solid #838383;
 }
-.tool .tool-item-user .box-show p, .tool .tool-item-user .box-show a {
+.tool .tool-item-user .box-show p,
+.tool .tool-item-user .box-show a {
   display: block;
   padding: 10px 30px;
   background: #FFFFFF;
@@ -320,7 +326,8 @@ header p {
   margin: 0 auto;
   cursor: pointer;
 }
-.tool .tool-item-user .box-show p:hover, .tool .tool-item-user .box-show a:hover {
+.tool .tool-item-user .box-show p:hover,
+.tool .tool-item-user .box-show a:hover {
   background-color: #D9D9D9;
 }
 .tool .tool-item .tool-item-icon:nth-child(4) {
@@ -762,7 +769,8 @@ footer .footer-bot-ab2 span img {
   justify-content: center;
   align-items: center;
 }
-.modal1 header, .modal1 footer {
+.modal1 header,
+.modal1 footer {
   background: unset;
   flex-direction: unset;
   height: unset;
@@ -971,7 +979,9 @@ footer .footer-bot-ab2 span img {
   padding: 25px;
   transition-delay: 0s;
 }
-.formRight form.otherForm.toggle header, .formRight form.otherForm.toggle section, .formRight form.otherForm.toggle footer {
+.formRight form.otherForm.toggle header,
+.formRight form.otherForm.toggle section,
+.formRight form.otherForm.toggle footer {
   opacity: 1;
   transition-delay: 0.3s;
 }
@@ -1015,4 +1025,35 @@ footer .footer-bot-ab2 span img {
   position: absolute;
   top: 35px !important;
   right: -12.5px !important;
+}
+
+.box-new-nav {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.box-new-nav p,
+.box-new-nav img {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#login .login-with .boder {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+#login .login-with .boder div {
+  height: 1px;
+  width: 35%;
+  background-color: #fff;
+  border-top: 1px solid #fff;
+}
+#login .login-with .boder p {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
