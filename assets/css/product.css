@@ -1,5 +1,12 @@
+.product .title {
+  font-weight: 700;
+  font-size: 300%;
+  line-height: 24px;
+  margin-top: 50px;
+}
 .product .box {
   align-items: start;
+  margin-top: 30px;
 }
 .product .box-new-item {
   margin-left: -8px;
@@ -10,6 +17,28 @@
 .product .box-detail-product {
   width: 100%;
   margin-bottom: 60px;
+}
+.product .filter {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.product .filter p {
+  font-weight: 400;
+  font-size: 80%;
+}
+.product .filter .col-xs-9 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product .filter .col-xs-9 > div {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.product .filter .col-xs-9 select {
+  height: 30px;
 }
 .product .box-1 {
   background: #5DA8AF;

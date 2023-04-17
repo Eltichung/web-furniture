@@ -1,8 +1,16 @@
 .product
 {
+    .title
+    {
+        font-weight: 700;
+        font-size: 300%;
+        line-height: 24px;
+        margin-top: 50px;
+    }
     .box
     {
-        align-items: start;
+        align-items: start; 
+        margin-top: 30px;
     }
     .box-new-item
     {
@@ -16,6 +24,37 @@
     {
         width: 100%;
         margin-bottom: 60px;
+    }
+    .filter
+    {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        p
+        {
+            font-weight: 400;
+            font-size: 80%;
+        }
+        .col-xs-3
+        {
+
+        }
+        .col-xs-9
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            >div
+            {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+            }
+            select
+            {
+                height: 30px;
+            }
+        }
     }
     .box-1
     {

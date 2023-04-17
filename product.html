@@ -143,8 +143,36 @@
             </div>
         </div>
     </div>
+    <div class="banner container owl-carousel">
+        <div class="banner-item">
+            <img src="./assets/img/banner-1.png" alt="">
+        </div>
+        <div class="banner-item">
+            <img src="./assets/img/banner-2.png" alt="">
+        </div>
+        <div class="banner-item">
+            <img src="./assets/img/banner-3.png" alt="">
+        </div>
+    </div>
+    <h2 class="container title">GHẾ SOFA</h2>
+    <box class="filter container">
+        <div class="col-xs-3">
+            <p>Bộ lọc    <span><img src="./assets/img/filter.png" alt=""></span></p>
+        </div>
+        <div class="col-xs-9">
+            <div>
+                <p>Showing 1-9 of 20</p>
+                <img src="./assets/img/gach.png" alt="">
+                <p>Lọc theo: Sản phẩm nổi bật <span><img src="./assets/img/xuong.png" alt=""></span></p>
+            </div>
+            <select class="filter-select">
+                <option value="First one">Sản phẩm nổi bật</option>
+                <option value="Second One">Giá tiền</option>
+                <option value="Third one">Ngày sản xuất</option>
+            </select>
+        </div>
+    </box>
     <div class="box container flex-r">
-        <h2>GHẾ SOFA</h2>
         <div class="flex-r between-xs box-detail-product">
             <div class="box-new-item col-xs-3">
                 <div class="box-1 flex-r">
@@ -1123,6 +1151,17 @@ $('.wrapper-product').owlCarousel({
     margin:32,
     nav:false,
     loop:true,
+})
+$(document).ready(function () {
+        $('.banner').owlCarousel({
+            items: 1,
+            margin: 0,
+            dots: false,
+            autoplay: true,
+            loop: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+        })
 })
     </script>
 </html>
