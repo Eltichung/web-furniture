@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 1258px;
+  width: 1258px !important;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -84,6 +84,9 @@ header p {
   z-index: 1000000000000000000000;
   cursor: pointer;
 }
+.noti img {
+  width: 60px;
+}
 
 .nav-fixed {
   gap: 8px;
@@ -129,6 +132,13 @@ header p {
   font-size: 125%;
   color: #000000;
 }
+.menu li a:hover {
+  color: #F7934D;
+}
+
+.activeOrange {
+  color: #F7934D !important;
+}
 
 #isShow:hover {
   color: red;
@@ -142,6 +152,7 @@ header p {
 
 .menu-top {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .aa {
@@ -161,7 +172,7 @@ header p {
 
 .box-hide {
   flex-wrap: wrap;
-  border: 1px solid #B4B3B3;
+  border: 1px solid #D9D9D9;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .box-hide-item {
@@ -179,7 +190,11 @@ header p {
 .box-hide-item ul li {
   color: #838383;
   font-weight: 500;
-  list-style: decimal;
+  list-style: circle;
+}
+.box-hide-item ul li:hover {
+  color: #5DA8AF;
+  text-decoration: underline;
 }
 .box-hide-menu {
   font-size: 90%;
@@ -292,23 +307,28 @@ header p {
 }
 .tool .tool-item-search {
   height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid #000000;
 }
 .tool .tool-item-search input {
   padding-left: 15px;
-  background: #F5F5F5;
+  background: transparent;
   border: none;
   outline: none;
-  width: 421px;
+  width: 350px;
   height: 54px;
   font-size: 100%;
 }
-.tool .tool-item-search-icon {
-  padding: 10px;
-  background: #5DA8AF;
+.tool .tool-item-search input ::-moz-placeholder {
+  opacity: 0.5;
+}
+.tool .tool-item-search input ::placeholder {
+  opacity: 0.5;
 }
 .tool .tool-item-user {
   align-items: center;
-  gap: 15px;
+  gap: 5px;
   position: relative;
   cursor: pointer;
 }
@@ -380,16 +400,16 @@ header p {
   align-items: center;
 }
 .box > h1 {
-  font-weight: 500;
   font-size: 225%;
   margin-bottom: 35px;
   text-align: center;
   display: inline;
   position: relative;
+  font-weight: 700;
 }
 .box > h1:after {
   content: "";
-  width: 250px;
+  width: 160px;
   height: 1px;
   border-bottom: 3px solid #F7934D;
   bottom: -10px;
@@ -527,8 +547,8 @@ header p {
   align-items: start;
 }
 .new > h1 {
+  width: 100%;
   border: 0;
-  text-align: start;
   padding: 0;
 }
 .new .box-new {
@@ -554,6 +574,7 @@ header p {
   border-radius: 100%;
   outline: none;
   transform: translateX(-50%);
+  transition: 0.25s linear;
 }
 .new .box-new .dotL span {
   opacity: 0 !important;

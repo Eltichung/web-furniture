@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    width: 1258px;
+    width: 1258px !important;
     max-width: 90%;
     margin: 0 auto;
 }
@@ -90,6 +90,10 @@ header {
     left: 50px;
     z-index:999999999999999999999;
     cursor: pointer;
+    img
+    {
+        width: 60px;
+    }
 }
 .nav-fixed {
     gap: 8px;
@@ -137,10 +141,16 @@ header {
         a {
             font-size: 125%;
             color: $black;
+            &:hover
+            {
+                color: $orange;
+            }
         }
     }
 }
-
+.activeOrange {
+    color: $orange !important;
+}
 #isShow:hover {
     color: red;
     transition: 0.25s linear;
@@ -153,6 +163,7 @@ header {
 
 .menu-top {
     position: relative;
+    margin-bottom: 10px;
 }
 
 .aa {
@@ -172,7 +183,7 @@ header {
 
 .box-hide {
     flex-wrap: wrap;
-    border: 1px solid #B4B3B3;
+    border: 1px solid #D9D9D9;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     &-item {
         margin-top: 15px;
@@ -190,7 +201,12 @@ header {
             li {
                 color: $gray;
                 font-weight: 500;
-                list-style: decimal;
+                list-style:circle;
+                &:hover
+                {
+                    color: $green;
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -326,26 +342,27 @@ header {
 
         &-search {
             height: 100%;
-
+            display: flex;
+            align-items: center;
+            border-bottom: 0.5px solid #000000;
             input {
                 padding-left: 15px;
-                background: #F5F5F5;
+                background: transparent;
                 border: none;
                 outline: none;
-                width: 421px;
+                width: 350px;
                 height: 54px;
                 font-size: 100%;
-            }
-
-            &-icon {
-                padding: 10px;
-                background: $green
+                ::placeholder
+                {
+                    opacity: 0.5;
+                }
             }
         }
 
         &-user {
             align-items: center;
-            gap: 15px;
+            gap: 5px;
             position: relative;
             cursor: pointer;
 
@@ -425,16 +442,15 @@ header {
     align-items: center;
 
     >h1 {
-        font-weight: 500;
         font-size: 225%;
         margin-bottom: 35px;
         text-align: center;
         display: inline;
         position: relative;
-
+        font-weight: 700;
         &:after {
             content: '';
-            width: 250px;
+            width: 160px;
             height: 1px;
             border-bottom: 3px solid $orange;
             bottom: -10px;
@@ -602,8 +618,8 @@ header {
     align-items: start;
 
     >h1 {
+        width: 100%;
         border: 0;
-        text-align: start;
         padding: 0
     }
 
@@ -632,7 +648,11 @@ header {
             border-radius: 100%;
             outline: none;
             transform: translateX(-50%);
-
+            transition: 0.25s linear;
+            // &:hover
+            // {
+            //     background:red;
+            // }
             span {
                 opacity: 0 !important;
             }
