@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: unset !important;
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
 body {
@@ -72,7 +74,7 @@ header p {
   text-align: center;
   align-items: center;
   color: #fff;
-  line-height: 60px;
+  line-height: 60px !important;
   font-weight: 500;
   font-size: 100%;
 }
@@ -97,10 +99,15 @@ header p {
   z-index: 99999;
 }
 .nav-fixed-item {
+  height: 50px;
+  box-sizing: border-box;
   cursor: pointer;
   padding: 10px;
   background-color: #5DA8AF;
   border-radius: 3px;
+}
+.nav-fixed-item:nth-child(2) img {
+  transform: scale(120%);
 }
 .nav-fixed-item img {
   margin: auto;
@@ -206,7 +213,7 @@ header p {
 }
 
 .box-gallery {
-  width: 50%;
+  width: 65%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 30px;
@@ -216,6 +223,9 @@ header p {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+.box-gallery-item img {
+  height: 57px;
 }
 .box-gallery-item:hover img:nth-child(2) {
   display: block;
@@ -438,6 +448,7 @@ header p {
   cursor: pointer;
 }
 .box-product-item > h3 {
+  margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 400;
 }

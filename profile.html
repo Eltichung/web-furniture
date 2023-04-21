@@ -33,18 +33,56 @@
         </div>
         <div class="tool-item col-xs-9 flex-r ">
             <div class="tool-item-search flex-r">
-                <input type="text" placeholder="Tìm kiếm sản phẩm">
                 <div class="tool-item-search-icon">
                     <img src="./assets/img/search.png" alt="">
                 </div>
+                <input type="text" placeholder="Tìm kiếm">
             </div>
-            <div class="tool-item-user flex-r">
+            <div class="tool-item-user flex-r" id="account">
                 <img src="./assets/img/user.png" alt="">
-                <a href="./profile.html">Tài khoản</a>
+                <p>Tài khoản</p>
+                <div class="box-show">
+                    <h4>Xin chào Vy Anh</h4>
+                    <a data-modal="#login-modal">Đăng kí</a>
+                    <p>Đăng nhập</p>
+                    <p>Tài khoản của tôi</p>
+                    <p>Đơn hàng của tôi</p>
+                </div>
             </div>
-            <div class="tool-item-user flex-r">
+            <div class="tool-item-user flex-r" id="cartClick">
                 <img src="./assets/img/cart.png" alt="">
-                <a href="./cart.html">Giỏ hàng</a>
+                <p>Giỏ hàng</p>
+                <div class="box-show1">
+                    <h3>Giỏ hàng</h3>
+                    <div class="product-cart">
+                        <div class="cart-item-product flex-r">
+                            <img src="./assets/img/cart-1.png" alt="">
+                            <div class="cart-item-product-text flex-c">
+                                <h3>Bàn học Gỗ Tràm Tự Nhiên MOHO NYBORG 301</h3>
+                                <p class="gray">1,090,000 đ</span></p>
+                                <p class="gray">Be</p>
+                            </div>
+                            <img src="./assets/img/close.png" alt="" class="img-abs">
+                        </div>
+                        <div class="cart-item-product flex-r">
+                            <img src="./assets/img/cart-1.png" alt="">
+                            <div class="cart-item-product-text flex-c">
+                                <h3>Bàn học Gỗ Tràm Tự Nhiên MOHO NYBORG 301</h3>
+                                <p class="gray">1,090,000 đ</span></p>
+                                <p class="gray">Be</p>
+                            </div>
+                            <img src="./assets/img/close.png" alt="" class="img-abs">
+                        </div>
+                    </div>
+                    <div class="cart1-p flex-r between-xs">
+                        <p>Tổng tiền</p>
+                        <p class="orange">8,490,000₫</p>
+                    </div>
+                    <div class="cart1-btn">
+                        <button><a href="./cart.html">Xem giỏ hàng</a></button>
+                        <button><a href="./pay.html">Thanh toán</a></button>
+                    </div>
+                </div>
             </div>
             <div class="tool-item-icon flex-r">
                 <img src="./assets/img/heart.png" alt="">
@@ -54,81 +92,81 @@
             </div>
         </div>
     </div>
-    <div class="menu-top">
+    <div class="menu-top ">
         <ul class="menu container flex-r">
-            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./index.html" class="activeOrange">Trang chủ</a></li>
             <li><a href="#" id="isShow">Danh mục sản phẩm <span><img src="./assets/img/arrow.png" alt=""></span>
-                <div class="menu-hide">
-                    <div class="box-hide container flex-r">
-                        <div class="box-hide-item col-xs-3">
-                            <img src="./assets/img/menu1.png" alt="">
-                            <h3>Phòng khách</h3>
-                            <ul class="box-hide-menu">
-                                <li>Ghế Sofa</li>
-                                <li>Bàn Sofa - Bàn Cafe - Bàn Trà</li>
-                                <li>Tủ Kệ TV</li>
-                                <li>Tủ Gìay - Tủ Trang Trí</li>
-                                <li>Ghế Tựa</li>
-                            </ul>
-                        </div>
-                        <div class="box-hide-item col-xs-3">
-                            <img src="./assets/img/menu2.png" alt="">
-                            <h3>Phòng ngủ</h3>
-                            <ul class="box-hide-menu">
-                                <li>Tủ quần áo</li>
-                                <li>Bàn Trang Điểm</li>
-                                <li>Giường Ngủ</li>
-                                <li>Tủ Đầu Giường</li>
-                            </ul>
-                        </div>
-                        <div class="box-hide-item col-xs-3">
-                            <img src="./assets/img/menu3.png" alt="">
-                            <h3>Phòng bếp</h3>
-                            <ul class="box-hide-menu">
-                                <li>Bộ Bàn ăn</li>
-                                <li>Bàn ăn</li>
-                                <li>Ghế ăn</li>
-                                <li>Tủ Bếp</li>
-                            </ul>
-                        </div>
-                        <div class="box-hide-item col-xs-3">
-                            <img src="./assets/img/menu4.png" alt="">
-                            <h3>Phòng làm việc</h3>
-                            <ul class="box-hide-menu">
-                                <li>Tủ & Kệ</li>
-                                <li>Bàn Làm Việc</li>
-                                <li>Ghế Văn Phòng</li>
-                            </ul>
-                        </div>
-                        <div class="box-hide-item col-xs-3">
-                            <img src="./assets/img/menu5.png" alt="">
-                            <h3>Bộ sưu tập</h3>
-                            <div class="box-hide-2">
+                    <div class="menu-hide">
+                        <div class="box-hide container flex-r">
+                            <div class="box-hide-item col-xs-3">
+                                <img src="./assets/img/menu1.png" alt="">
+                                <h3>Phòng khách</h3>
                                 <ul class="box-hide-menu">
-                                    <li>KOGE Collection</li>
-                                    <li>KOLDING Collection</li>
-                                    <li>FIJI Collection</li>
-                                    <li>CABO Collection</li>
-                                    <li>OSAKA Collection</li>
+                                    <li class="ghe">Ghế Sofa</li>
+                                    <li>Bàn Sofa - Bàn Cafe - Bàn Trà</li>
+                                    <li>Tủ Kệ TV</li>
+                                    <li>Tủ Gìay - Tủ Trang Trí</li>
+                                    <li>Ghế Tựa</li>
                                 </ul>
+                            </div>
+                            <div class="box-hide-item col-xs-3">
+                                <img src="./assets/img/menu2.png" alt="">
+                                <h3>Phòng ngủ</h3>
                                 <ul class="box-hide-menu">
-                                   <li>ELEGANCE Collection</li>
-                                   <li>POP Collection</li>
-                                   <li>BỤI Collection</li>
-                                   <li>DUBAI Collection</li>
-                                   <li>VIENNA Collection</li>
+                                    <li>Tủ quần áo</li>
+                                    <li>Bàn Trang Điểm</li>
+                                    <li>Giường Ngủ</li>
+                                    <li>Tủ Đầu Giường</li>
                                 </ul>
+                            </div>
+                            <div class="box-hide-item col-xs-3">
+                                <img src="./assets/img/menu3.png" alt="">
+                                <h3>Phòng bếp</h3>
+                                <ul class="box-hide-menu">
+                                    <li>Bộ Bàn ăn</li>
+                                    <li>Bàn ăn</li>
+                                    <li>Ghế ăn</li>
+                                    <li>Tủ Bếp</li>
+                                </ul>
+                            </div>
+                            <div class="box-hide-item col-xs-3">
+                                <img src="./assets/img/menu4.png" alt="">
+                                <h3>Phòng làm việc</h3>
+                                <ul class="box-hide-menu">
+                                    <li>Tủ & Kệ</li>
+                                    <li>Bàn Làm Việc</li>
+                                    <li>Ghế Văn Phòng</li>
+                                </ul>
+                            </div>
+                            <div class="box-hide-item col-xs-3">
+                                <img src="./assets/img/menu5.png" alt="">
+                                <h3>Bộ sưu tập</h3>
+                                <div class="box-hide-2">
+                                    <ul class="box-hide-menu">
+                                        <li>KOGE Collection</li>
+                                        <li>KOLDING Collection</li>
+                                        <li>FIJI Collection</li>
+                                        <li>CABO Collection</li>
+                                        <li>OSAKA Collection</li>
+                                    </ul>
+                                    <ul class="box-hide-menu">
+                                        <li>ELEGANCE Collection</li>
+                                        <li>POP Collection</li>
+                                        <li>BỤI Collection</li>
+                                        <li>DUBAI Collection</li>
+                                        <li>VIENNA Collection</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </a></li>
+                </a></li>
             <li><a href="./blog.html">Blog <span><img src="./assets/img/arrow.png" alt=""></span></a></li>
             <li><a href="./about.html">Về chúng tôi</a></li>
             <li><a href="./contact.html">Liên hệ</a></li>
         </ul>
-        
-       
+
+
     </div>
     <div class="nav-cart">
         <div class="container">
@@ -275,5 +313,44 @@ $('.banner').owlCarousel({
     autoplayTimeout:3000,
     autoplayHoverPause:true,
 })})
+$('.ghe').on('click', function () {
+        window.location.href = './product.html'
+    })
+    $('.box-product-item').click(function () {
+        window.location.href = './detailProduct.html'
+    })
+    $("#account").click(function () {
+        $(".box-show").toggle(300);
+    });
+    $("#cartClick").click(function () {
+        $(".box-show1").toggle(300);
+    });
+
+    //modal
+    $(function () {
+        $('a[data-modal]').on('click', function () {
+            $($(this).data('modal')).modal({
+                fadeDuration: 250
+            });
+            return false;
+        });
+    });
+    // jQuery
+    $(function () {
+
+        // Switch to Forgot Password
+        $('.forgotBtn').click(function () {
+            $('#forgot').toggleClass('toggle');
+        });
+
+        // Switch to Register
+        $('.registerBtn').click(function () {
+            $('#register, #formContainer').toggleClass('toggle');
+        });
+
+    });
+    $('.ghe').on('click', function () {
+        window.location.href = './product.html'
+    })
     </script>
 </html>

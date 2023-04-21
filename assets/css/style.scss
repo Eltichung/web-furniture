@@ -5,12 +5,15 @@ $brown: #614436;
 $brown2: #CEB086;
 $orange: #F7934D;
 
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: unset !important;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 body {
@@ -78,7 +81,7 @@ header {
         text-align: center;
         align-items: center;
         color: #fff;
-        line-height: 60px;
+        line-height: 60px !important;
         font-weight: 500;
         font-size: 100%;
     }
@@ -102,13 +105,20 @@ header {
     top: 50%;
     transform: translateY(-50%);
     z-index: 99999;
-
     &-item {
+        height: 50px;
+        box-sizing: border-box;
         cursor: pointer;
         padding: 10px;
         background-color: $green;
         border-radius: 3px;
-
+        &:nth-child(2)
+        {
+            img
+            {
+                transform: scale(120%);
+            }
+        }
         img {
             margin: auto;
         }
@@ -223,7 +233,7 @@ header {
 }
 
 .box-gallery {
-    width: 50%;
+    width: 65%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 30px;
@@ -233,7 +243,10 @@ header {
         justify-content: center;
         align-items: center;
         position: relative;
-
+        img
+        {
+            height:57px;
+        }
         &:hover img:nth-child(2) {
             display: block;
         }
@@ -482,6 +495,7 @@ header {
             cursor: pointer;
 
             >h3 {
+                margin-top: 10px;
                 margin-bottom: 10px;
                 font-weight: 400;
             }

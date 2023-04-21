@@ -188,7 +188,7 @@
     input
     {
         width: 100%;
-        border-radius: 8px;
+
         padding-left: 10px;
         margin-bottom: 20px;
         height: 50px;
@@ -201,7 +201,7 @@
     .nice-select
     {
         margin-bottom: 20px;
-        border-radius: 8px;
+ 
     }
     button
     {
@@ -280,7 +280,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-      
+        button
+        {
+            width:170px;
+            height: 60px;
+            border-radius:unset !important;
+            font-size:87.5%;
+        }
     }
 }
 .success
@@ -305,4 +311,23 @@
             margin: 5px 0 ;
         }
     }
+}
+.address-select
+{
+    img
+    {
+        width: 100%;
+    }
+}
+.i103
+{
+   
+        width: 100%;
+    
+}
+.tong
+{
+    font-size: 125%;
+    font-weight: 500;
+    color: #4B4B4B;
 }

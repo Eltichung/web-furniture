@@ -307,6 +307,45 @@
     $(document).ready(function () {
         $('select').niceSelect();
     });
+    $('.ghe').on('click', function () {
+        window.location.href = './product.html'
+    })
+    $('.box-product-item').click(function () {
+        window.location.href = './detailProduct.html'
+    })
+    $("#account").click(function () {
+        $(".box-show").toggle(300);
+    });
+    $("#cartClick").click(function () {
+        $(".box-show1").toggle(300);
+    });
+
+    //modal
+    $(function () {
+        $('a[data-modal]').on('click', function () {
+            $($(this).data('modal')).modal({
+                fadeDuration: 250
+            });
+            return false;
+        });
+    });
+    // jQuery
+    $(function () {
+
+        // Switch to Forgot Password
+        $('.forgotBtn').click(function () {
+            $('#forgot').toggleClass('toggle');
+        });
+
+        // Switch to Register
+        $('.registerBtn').click(function () {
+            $('#register, #formContainer').toggleClass('toggle');
+        });
+
+    });
+    $('.ghe').on('click', function () {
+        window.location.href = './product.html'
+    })
 </script>
 
 </html>

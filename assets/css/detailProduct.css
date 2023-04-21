@@ -140,9 +140,13 @@ ul#tabs-nav li.active a {
 }
 
 .tab-content {
-  padding: 10px;
+  padding: 10px 60px;
   border: 1px solid #B4B3B3;
   background-color: #FFF;
+}
+
+.detailProduct p {
+  line-height: 24px;
 }
 
 #tab1 {
@@ -163,6 +167,7 @@ ul#tabs-nav li.active a {
   font-weight: 400;
   font-size: 250%;
   margin: 40px;
+  text-align: center;
 }
 #tab1 h3 {
   font-style: normal;

@@ -11,7 +11,9 @@
     <link type="text/css" rel="stylesheet" href="./assets/css/flexboxgrid.min.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -104,7 +106,7 @@
                                 <img src="./assets/img/menu1.png" alt="">
                                 <h3>Phòng khách</h3>
                                 <ul class="box-hide-menu">
-                                    <li>Ghế Sofa</li>
+                                    <li class="ghe">Ghế Sofa</li>
                                     <li>Bàn Sofa - Bàn Cafe - Bàn Trà</li>
                                     <li>Tủ Kệ TV</li>
                                     <li>Tủ Gìay - Tủ Trang Trí</li>
@@ -196,57 +198,57 @@
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery2.png" alt="">
                 <img src="./assets/img/gallery22.png" alt="">
-                <p>Beds</p>
+                <p>Giường</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery3.png" alt="">
                 <img src="./assets/img/gallery33.png" alt="">
-                <p>Dining</p>
+                <p>Bộ bàn ăn</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery4.png" alt="">
                 <img src="./assets/img/gallery44.png" alt="">
-                <p>Wadrobes </p>
+                <p>Tủ quần áo</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery5.png" alt="">
                 <img src="./assets/img/gallery55.png" alt="">
-                <p>Recliners</p>
+                <p>Ghế tựa</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery6.png" alt="">
                 <img src="./assets/img/gallery66.png" alt="">
-                <p>Seating</p>
+                <p>Ghế ăn</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery7.png" alt="">
                 <img src="./assets/img/gallery77.png" alt="">
-                <p>Coffee Tables</p>
+                <p>Bàn cafe</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery8.png" alt="">
                 <img src="./assets/img/gallery88.png" alt="">
-                <p>TV Units</p>
+                <p>Tủ kệ TV</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery9.png" alt="">
                 <img src="./assets/img/gallery99.png" alt="">
-                <p>Shoes Racks</p>
+                <p>Tủ giày</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery10.png" alt="">
                 <img src="./assets/img/gallery101.png" alt="">
-                <p>Study</p>
+                <p>Bàn học</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery11a.png" alt="">
                 <img src="./assets/img/gallery111.png" alt="">
-                <p>Bookshelves</p>
+                <p>Giá sách</p>
             </div>
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery12.png" alt="">
                 <img src="./assets/img/gallery121.png" alt="">
-                <p>Lightining</p>
+                <p>Đèn</p>
             </div>
         </div>
     </div>
@@ -950,7 +952,7 @@ View settings for more info. -->
             autoplayHoverPause: true,
         })
         $('.box-product').owlCarousel({
-            margin: 34,
+            margin: 36,
             nav: false,
             dots: false,
             navClass: ['btn-left', 'btn-right'],
@@ -982,7 +984,7 @@ View settings for more info. -->
         })
     })
     $('.box-product-item').click(function () {
-        window.location.href = './product.html'
+        window.location.href = './detailProduct.html'
     })
     $("#account").click(function () {
         $(".box-show").toggle(300);
@@ -1014,7 +1016,9 @@ View settings for more info. -->
         });
 
     });
-
+    $('.ghe').on('click', function () {
+        window.location.href = './product.html'
+    })
 </script>
 
 </html>

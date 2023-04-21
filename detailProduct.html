@@ -21,7 +21,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="cart">
+<body class="cart detailProduct">
     <header>
         <p>FREESHIP TP.HCM, Hà Nội, Biên Hòa và một số khu vực tại Bình Dương. Ngập tràn mã ưu đãi từ 50K đến 500K.</p>
     </header>
@@ -66,11 +66,15 @@
     <div class="nav-cart">
         <div class="container">
             <div class="nav-cart-item">
-                <p><span><img src="./assets/img/house-solid 1.png" alt=""></span>Trang chủ</p>
+                <p><span><img src="./assets/img/house-solid 1.png" alt="">&nbsp;</span><a href="./index.html">Trang chủ</a></p>
                 <img src="./assets/img/arrow-right.png" alt="">
             </div>
             <div class="nav-cart-item">
-                <a href="./cart.html" class="gray">About us</a>
+                <a href="#" class="gray">Tủ Kệ Tivi Gỗ FURNICO OSLO </a>
+                <img src="./assets/img/arrow-right.png" alt="">
+            </div>
+            <div class="nav-cart-item">
+                <a href="#" class="gray">Tất cả sản phẩm FURNICO</a>
             </div>
         </div>
     </div>
@@ -312,12 +316,9 @@
                     </div>
                 </div>
                 <div id="tab3" class="tab-content">
-                    <p><span><img src="./assets/img/tab-6.png" alt=""></span>Các sản phẩm nội thất tại FURNICO. đa số
-                        đều được sản xuất tại nhà máy của công ty cổ phần xây dựng kiến trúc AA với đội ngũ nhân viên và
-                        công nhân ưu tú cùng cơ sở vật chất hiện đại (http://www.aacorporation.com/). FURNICO. đã kiểm
-                        tra kỹ lưỡng từ nguồn nguyên liệu cho đến sản phẩm hoàn thiện cuối cùng</p>
                     <p><span><img src="./assets/img/tab-6.png" alt=""></span>FURNICO. bảo hành một năm cho các trường
                         hợp có lỗi về kỹ thuật trong quá trình sản xuất hay lắp đặt.</p>
+                    <p><span><img src="./assets/img/tab-6.png" alt=""></span>
                     <p><span><img src="./assets/img/tab-6.png" alt=""></span>Quý khách không nên tự sửa chữa mà hãy báo
                         ngay cho FURNICO. qua hotline: 1800 7200.</p>
                     <p><span><img src="./assets/img/tab-6.png" alt=""></span>Sau thời gian hết hạn bảo hành, nếu quý
@@ -538,6 +539,45 @@
         }, duration * 1000);
 
     });
+    $('.ghe').on('click', function () {
+        window.location.href = './product.html'
+    })
+    $('.box-product-item').click(function () {
+        window.location.href = './detailProduct.html'
+    })
+    $("#account").click(function () {
+        $(".box-show").toggle(300);
+    });
+    $("#cartClick").click(function () {
+        $(".box-show1").toggle(300);
+    });
+
+    //modal
+    $(function () {
+        $('a[data-modal]').on('click', function () {
+            $($(this).data('modal')).modal({
+                fadeDuration: 250
+            });
+            return false;
+        });
+    });
+    // jQuery
+    $(function () {
+
+        // Switch to Forgot Password
+        $('.forgotBtn').click(function () {
+            $('#forgot').toggleClass('toggle');
+        });
+
+        // Switch to Register
+        $('.registerBtn').click(function () {
+            $('#register, #formContainer').toggleClass('toggle');
+        });
+
+    });
+    $('.ghe').on('click', function () {
+        window.location.href = './product.html'
+    })
 </script>
 
 </html>
