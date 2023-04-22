@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cosmos Explore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Vendor CSS (GLOBAL MANDATORY STYLES)-->
+    <link rel="stylesheet" type="text/css" href="../../libs/metronic-admin/global/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../libs/metronic-admin/global/plugins/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&amp;display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS (THEME STYLES)-->
+    <!-- link(rel='stylesheet', type='text/css', href='../../libs/metronic-admin/admin/layout/css/layout.css')-->
+
+    <!-- Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/admin.css">
+
+  </head>
+
+  <body class="page-header-fixed page-quick-sidebar-over-content page-account page-account-vp">
+    <div class="page-container container">
+      <div class="page-sidebar-wrapper vetical-menu">
+        <div class="page-sidebar navbar-collapse collapse">
+          <div class="logo-page"><img src="../../assets/images/logo/logo.png" alt="index"/></div>
+          <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+            <li>
+              <a href="home.html">
+                <div class="icon">
+                  <img class="default" src="../../assets/images/icon/home.svg" alt="index"/>
+                  <img class="active" src="../../assets/images/icon/home-ac.svg" alt="index"/>
+                </div>
+                <span class="title">Trang chủ </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="ProductManagement.html">
+                <div class="icon">
+                  <img class="default" src="../../assets/images/icon/sp.svg" alt="index"/>
+                  <img class="active" src="../../assets/images/icon/sp-ac.png" alt="index"/>
+                </div>
+                <span class="title">Quản lý sản phẩm</span>
+              </a>
+            </li>
+
+            <li><a href="CategoryManagement.html">
+                <div class="icon"><img class="default" src="../../assets/images/icon/cate.svg" alt="index"/><img class="active" src="../../assets/images/icon/cate-ac.png" alt="index"/></div><span class="title">Quản lý danh mục sản phẩm</span></a></li>
+
+            <li><a class="menu-active" href="BillManagement.html">
+                <div class="icon"><img class="default" src="../../assets/images/icon/bill.svg" alt="index"/><img class="active" src="../../assets/images/icon/bill-ac.png" alt="index"/></div><span class="title">Quản lý đơn hàng</span></a></li>
+
+            <li><a href="PostManagement.html">
+                <div class="icon"><img class="default" src="../../assets/images/icon/post.svg" alt="index"/><img class="active" src="../../assets/images/icon/post-ac.png" alt="index"/></div><span class="title">Quản lý bài đăng</span></a></li>
+
+            <li><a href="UserManagement.html">
+                <div class="icon">
+                  <img class="default" src="../../assets/images/icon/acc.svg" alt="index"/>
+                  <img class="active" src="../../assets/images/icon/acc-ac.png" alt="index"/></div><span class="title">Quản lý tài khoản</span></a></li>
+
+            <li><a href="StatisticalManagement.html">
+                <div class="icon"><img class="default" src="../../assets/images/icon/tke.svg" alt="index"/><img class="active" src="../../assets/images/icon/tke-ac.png" alt="index"/></div><span class="title">Quản lý thống kê</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+      <!-- .page-sidebar-wrapper-->
+
+      <div class="page-content-wrapper">
+        <div class="page-header">
+          <div class="page-header-inner container">
+            <div class="box-search">
+              <form class="searchbox-container" action=".">
+                <input class="searchbox" type="search" name="search" autocomplete="off" placeholder="Search"/>
+                <button class="searchbutton" type="submit"><img class="icon-user" src="../../assets/images/search.svg" alt="menu"/></button>
+              </form>
+            </div>
+            <div class="navbar nav_title">
+              <div class="thumbnail-user"><img class="icon-user" src="../../assets/images/acount.svg" alt="menu"/></div>
+              <div class="information-user">
+                <p>Nguyễn Duyên<span class="old">Admin</span></p>
+                <!-- .dropdown-user-->
+              </div>
+            </div>
+            <!-- .top-menu-->
+          </div>
+        </div>
+        <!-- .page-header-->
+        <div class="clearfix"></div>
+
+        <div class="page-content">
+          <div class="container">
+            <div class="content-wrapper">
+              <section class="managementproduct">
+                <div class="title-section">
+                  <div class="title-left">
+                    <h2>QUẢN LÝ ĐƠN HÀNG </h2>
+                  </div>
+                  <div class="title-right">
+                    <button class="btn first" data-toggle="modal" data-target="#popupCreateBill" type="button"><span>+</span>Thêm đơn hàng</button>
+                  </div>
+                </div>
+                <div class="content-arrange">
+                  <div class="cnt-search"> 
+                    <form class="searchbox-container" action=".">
+                      <button class="searchbutton" type="submit"><img class="icon-user" src="../../assets/images/search.svg" alt="menu"/></button>
+                      <input class="searchbox" type="search" name="search" autocomplete="off" placeholder="Search"/>
+                    </form>
+                  </div>
+                  <div class="cnt-startus"><select name="cars" id="cars">
+<option value="volvo">Trạng thái</option>
+<option value="saab">Đang chờ</option>
+<option value="mercedes">Trên đường vận chuyển</option>
+<option value="audi">Đang gửi</option>
+</select>
+                  </div>
+                  <div class="cnt-add"><select name="cars" id="cars">
+<option value="volvo">Địa chỉ</option>
+<option value="saab">Hà Nội</option>
+<option value="mercedes">TP Hồ Chí Minh</option>
+<option value="audi">Đà Nẵng</option>
+</select>
+                  </div>
+                </div>
+                <div class="content-table">
+                  <table>
+<thead>
+<tr>
+<th>Mã đơn hàng</th>
+<th>Chờ xử lý</th>
+<th>Đang giao hàng</th>
+<th>Đã giao</th>
+<th>Đã hủy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DH1</td>
+<td>
+                  <Anh>Nam</Anh></td>
+<td>Nam Định</td>
+<td>Chờ xử lý</td>
+<td>
+<ul>
+<li>
+                  <button data-toggle="modal" data-target="#popupEditBill" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></li>
+<li>
+                  <button data-toggle="modal" data-target="#popupDeleteBill" type="button"> <i class="fa fa-trash" aria-hidden="true"></i></button></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table> 
+                </div>
+                <div class="table-bottom">
+                  <div class="bottom-left">Hiển thị từ 1 đến 7 trên tổng số 7 trang</div>
+                  <div class="bottom-right"><div class="pagination">
+<button class="btn-nav left-btn">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="left-icon">
+<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+</svg>
+</button>
+<div class="page-numbers">
+<button class="btn-page">1</button>
+<button class="btn-page">2</button>
+<button class="btn-page btn-selected">3</button>
+<button class="btn-page">4</button>
+<button class="btn-page">5</button>
+</div>
+<button class="btn-nav right-btn">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="right-icon">
+<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+</svg>
+</button>
+</div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <!-- .member-main-->
+        </div>
+      </div>
+      <!-- .page-content-->
+    </div>
+    <!-- .member-->
+    <!--.page-container-->
+
+    <!-- include ../includes/footer.jade-->
+
+    <div class="modal modal-dialog-centered fade popup_customer" id="popupCreateBill" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true"> <span> <i class="fa fa-times" aria-hidden="true"></i></span></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="title-popup">Thêm đơn hàng mới</h5>
+            <div class="content-popup-detail"><form action="index.html" method="post">
+              <div class="input-group"><label for="product_name">Mã đơn hàng</label>
+<input type="text" id="product_name" name="product_name">
+              </div>
+              <div class="input-group"><label for="product_number">Tên khách hàng</label>
+<input type="text" id="product_number" name="product_number">
+              </div>
+              <div class="input-group"><label for="product_price">Địa chỉ</label>
+<input type="text" id="product_price" name="product_price">
+              </div>
+              <div class="input-group"><label for="product_price">Trạng thái</label>
+<select name="lang" id="lang-select">
+<option value="">Trạng thái đơn hàng</option>
+<option value="csharp">C#</option>
+<option value="cpp">C++</option>
+</select>
+              </div></form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="list-button">
+              <button class="btn btn-huy close" type="button" data-dismiss="modal" aria-hidden="true"> HỦY BỎ</button>
+              <button class="btn btn-save" data-toggle="modal" data-target="#popupConfirmFinish" type="button">LƯU THAY ĐỔI</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-dialog-centered fade popup_customer" id="popupEditBill" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true"> <span> <i class="fa fa-times" aria-hidden="true"></i></span></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="title-popup">Chỉnh sửa đơn hàng</h5>
+            <div class="content-popup-detail"><form action="index.html" method="post">
+              <div class="input-group"><label for="product_name">Mã đơn hàng</label>
+<input type="text" id="product_name" name="product_name">
+              </div>
+              <div class="input-group"><label for="product_number">Tên khách hàng</label>
+<input type="text" id="product_number" name="product_number">
+              </div>
+              <div class="input-group"><label for="product_price">Địa chỉ</label>
+<input type="text" id="product_price" name="product_price">
+              </div>
+              <div class="input-group"><label for="product_price">Trạng thái</label>
+<select name="lang" id="lang-select">
+<option value="">Trạng thái đơn hàng</option>
+<option value="csharp">C#</option>
+<option value="cpp">C++</option>
+</select>
+              </div></form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="list-button">
+              <button class="btn btn-huy close" type="button" data-dismiss="modal" aria-hidden="true"> HỦY BỎ</button>
+              <button class="btn btn-save" data-toggle="modal" data-target="#popupConfirmFinish" type="button">LƯU THAY ĐỔI</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-dialog-centered fade popup_customer popup-delete" id="popupDeleteBill" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true"> <span> <i class="fa fa-times" aria-hidden="true"></i></span></button>
+          </div>
+          <div class="modal-body">
+            <h5 class="title-popup"> <span> </span><span>Xóa đơn hàng !</span></h5>
+            <div class="content-popup-detail">
+              <div class="cnt-delete"> </div>
+              <p>Bạn có muốn xóa sản phẩm không?</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="list-button">
+              <button class="btn btn-huy" data-toggle="modal" data-target="#popupConfirmFinish" type="button">HỦY BỎ</button>
+              <button class="btn btn-save" data-toggle="modal" data-target="#popupConfirmFinish" type="button">LƯU THAY ĐỔI</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vendor jQuery (CORE PLUGINS - METRONIC)-->
+    <script type="text/javascript" src="../../libs/metronic-admin/global/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="../../libs/metronic-admin/global/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../libs/metronic-admin/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.canvas.js"></script>
+
+    <!-- Theme Script-->
+    <script type="text/javascript" src="https://kit.fontawesome.com/8b9922aecc.js"></script>
+    <script type="text/javascript" src="../../assets/js/admin.js"></script>
+  </body>
+</html>

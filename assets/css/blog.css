@@ -65,4 +65,26 @@
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 8px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .blog .box {
+    margin-top: 30px;
+  }
+  .blog .box.box-new {
+    flex-wrap: wrap;
+  }
+  .blog .box.box-new .flex-r.between-xs {
+    flex-wrap: wrap;
+  }
+  .blog .box-new-item {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .blog .box-new .box-new-item.col-xs-8 .box-new-item-post p {
+    margin-bottom: 10px;
+  }
+  .blog .box-new-item-post img {
+    width: 50%;
+  }
 }/*# sourceMappingURL=blog.css.map */

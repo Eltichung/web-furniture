@@ -1,0 +1,41 @@
+
+<div class="modal modal-dialog-centered fade popup_customer" id="popupCreateBill" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal" aria-hidden="true"> <span> <i class="fa fa-times" aria-hidden="true"></i></span></button>
+      </div>
+      <div class="modal-body">
+        <h5 class="title-popup">Thêm sản phẩm</h5>
+        <div class="content-popup-detail"><form action="index.html" method="post">
+          <div class="input-group"><label for="product_name">Mã đơn hàng</label>
+<input type="text" id="product_name" name="product_name">
+          </div>
+          <div class="input-group"><label for="product_number">Tên khách hàng</label>
+<input type="text" id="product_number" name="product_number">
+          </div>
+          <div class="input-group"><label for="product_price">Địa chỉ</label>
+<input type="text" id="product_price" name="product_price">
+          </div>
+          <div class="input-group"><label for="product_price">Trạng thái</label>
+<select name="lang" id="lang-select">
+<option value="">--Hãy chọn một ngôn ngữ lập trình--</option>
+<option value="csharp">C#</option>
+<option value="cpp">C++</option>
+<option value="php">PHP</option>
+<option value="ruby">Ruby</option>
+<option value="js">Javascript</option>
+<option value="dart">Dart</option>
+</select>
+          </div></form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="list-button">
+          <button class="btn btn-huy close" type="button" data-dismiss="modal" aria-hidden="true"> HỦY BỎ</button>
+          <button class="btn btn-save" data-toggle="modal" data-target="#popupConfirmFinish" type="button">LƯU THAY ĐỔI</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

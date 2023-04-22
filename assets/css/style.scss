@@ -363,7 +363,7 @@ header {
                 background: transparent;
                 border: none;
                 outline: none;
-                width: 350px;
+                width: 27.3%;
                 height: 54px;
                 font-size: 100%;
                 ::placeholder
@@ -1259,3 +1259,135 @@ $main: #00897B;
         }
     }
 }
+
+@media only screen and (max-width: 1380px) {
+    .footer-center
+    {
+        .flex-r
+        {
+            flex-wrap: wrap;
+        }
+        
+    }
+    footer .footer-center-item {
+        gap: 30px;
+        max-width: 32%;
+        button
+        {
+            margin-bottom: 30px;
+        }
+    }
+}
+@media only screen and (max-width: 1180px) {
+    body {
+      font-size: 14px;
+    }
+    .tool .tool-item-search input {
+        width: 47.3%;
+    }
+    .tool 
+    {
+        justify-content: space-between;
+    }
+    .tool-item.col-xs-9
+    {
+        gap: 35px;
+        justify-content: flex-end;
+        
+    }
+    .tool 
+    {
+        flex-direction: column;
+        gap: 15px;
+        justify-content: flex-start;
+        align-items: start;
+        .tool-item
+        {
+            width:100%;
+            max-width: 100%;
+        }
+    }
+    .box-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .nav-fixed-item 
+    {
+        height:40px;
+    }
+    .nav-fixed-item img {
+        width: 20px;
+        margin: auto;
+    }
+  }
+@media only screen and (max-width: 980px) {
+    .menu {
+        justify-content: space-between;
+        gap: unset;
+        flex-wrap: wrap;
+    }
+    .a10
+    {
+        max-width: 90%;
+    }
+    footer .footer-center-item {
+        gap: 30px;
+        max-width: 40%;
+    }
+    .new .box-new .dotR
+    {
+        right: 2%;
+    }
+    .new .box-new .dotL
+    {
+        left: 2%;
+    }
+  }
+@media only screen and (max-width: 680px) {
+    body {
+        font-size: 12px;
+      }
+      .box-infor
+      {
+        flex-wrap: wrap;
+        margin-bottom:100px;
+      }
+      .box-infor-item.col-xs-3
+      {
+        flex-basis: 50%;
+        max-width: 50%;
+        padding: 15px 0;
+        img
+        {
+            width:50px
+        }
+      }
+      .a32
+      {
+        margin-top: unset;
+      }
+      .box-logo.owl-carousel .owl-item img {
+        display: block;
+        width: 100% !important;
+    }
+    .box-hide-item.col-xs-3
+    {
+        flex-basis:30%;
+        max-width: 30%;
+    }
+    footer .footer-center-item {
+        gap: 30px;
+        max-width: 100%;
+        width: 100%;
+        button
+        {
+            margin-bottom: 30px;
+        }
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .box-hide-item.col-xs-3
+    {
+        flex-basis:50%;
+        max-width: 50%;
+    }
+  }

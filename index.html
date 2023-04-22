@@ -188,7 +188,7 @@
         </div>
     </div>
     <div class="box">
-        <h1>Khám phá dòng sản phẩm nội thất của chúng tôi</h1>
+        <h1 class="a10">Khám phá dòng sản phẩm nội thất của chúng tôi</h1>
         <div class="box-gallery">
             <div class="box-gallery-item flex-c">
                 <img src="./assets/img/gallery1.png" alt="">
@@ -728,7 +728,7 @@
             </div>
         </div>
     </div>
-    <div class="box container">
+    <div class="box container a32">
         <h1>Khách hàng FURNICO. tại</h1>
         <div class="box-logo flex-r owl-carousel owl-theme">
             <img src="./assets/img/logo1.png" alt="">
@@ -944,7 +944,7 @@ View settings for more info. -->
         })
         $('.box-logo').owlCarousel({
             items: 6,
-            margin: 0,
+            margin: 30,
             dots: false,
             autoplay: true,
             loop: true,
@@ -959,12 +959,15 @@ View settings for more info. -->
             loop: false,
             responsive: {
                 0: {
-                    items: 4
+                    items: 1
                 },
-                600: {
-                    items: 4
+                650: {
+                    items: 3
                 },
-                1000: {
+                980: {
+                    items: 3
+                },
+                1280: {
                     items: 4
                 }
             }
@@ -977,6 +980,12 @@ View settings for more info. -->
             navClass: ['dotL', 'dotR'],
             responsive: {
                 0: {
+                    items: 1
+                },
+                980: {
+                    items: 2
+                },
+                1280: {
                     items: 3
                 }
             }

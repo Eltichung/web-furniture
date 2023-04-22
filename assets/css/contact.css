@@ -47,7 +47,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 45%;
+  width: 47.5%;
   gap: 8px;
   position: relative;
 }
@@ -139,4 +139,26 @@
 }
 .profile .form-item .gender-radio {
   width: 15px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .box-contact {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-contact .contact, .box-contact .letter {
+    width: 100%;
+    max-width: 80%;
+    flex-basis: 80%;
+  }
+  .box-contact .contact-item .abs {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .form .form-item {
+    width: 80%;
+  }
 }/*# sourceMappingURL=contact.css.map */

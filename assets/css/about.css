@@ -41,4 +41,23 @@
 }
 .box-about-item .first .about-item-content-text p {
   margin: 20px 0;
+}
+
+@media only screen and (max-width: 1080px) {
+  .about-item-content {
+    flex-wrap: wrap;
+  }
+  .about-item-content img {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  .about-item-content-text {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .box-about-item .first img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=about.css.map */
