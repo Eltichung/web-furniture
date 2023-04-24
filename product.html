@@ -211,8 +211,11 @@
         </div>
     </box>
     <div class="box container flex-r">
+        <div class="ic-danh" style="cursor: pointer;">
+            <img src="./assets/img/danh.png" alt="">
+        </div>
         <div class="flex-r between-xs box-detail-product">
-            <div class="box-new-item col-xs-3">
+            <div class="box-new-item col-xs-3 danh">
                 <div class="box-1 flex-r">
                     
                     <h3>Danh mục</h3>
@@ -1219,7 +1222,7 @@ $('.wrapper-product').owlCarousel({
     margin:32,
     nav:false,
     loop:true,
-    dots:false
+    dots:false,
 })
 $(document).ready(function () {
         $('.banner').owlCarousel({
@@ -1270,6 +1273,12 @@ $('.ghe').on('click', function () {
     });
     $('.ghe').on('click', function () {
         window.location.href = './product.html'
+    })
+    $('.bar').on('click', function () {
+        $('.menu').toggleClass('res-menu')
+    })
+    $('.ic-danh').on('click', function () {
+        $('.danh').toggleClass('res-menu')
     })
     </script>
 </html>

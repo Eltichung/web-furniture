@@ -94,7 +94,11 @@
             <div class="tool-item-icon flex-r">
                 <img src="./assets/img/flag.png" alt="">
             </div>
+            <div class="bar">
+                <img src="./assets/img/bar.png" alt="">
+            </div>
         </div>
+        
     </div>
     <div class="menu-top ">
         <ul class="menu container flex-r">
@@ -1027,6 +1031,9 @@ View settings for more info. -->
     });
     $('.ghe').on('click', function () {
         window.location.href = './product.html'
+    })
+    $('.bar').on('click', function () {
+        $('.menu').toggleClass('res-menu')
     })
 </script>
 
