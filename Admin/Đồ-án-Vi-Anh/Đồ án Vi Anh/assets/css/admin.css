@@ -4213,3 +4213,66 @@ img {
 .well .row-per-page .select-option button .caret {
   margin-left: 2px;
 }
+.information-user
+{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.information-user img
+{
+  width: 3px;
+}
+.t2 thead
+{
+background: unset !important;
+}
+.t2 thead tr th
+{
+color: #000 !important;
+}
+.t2
+{
+  padding-top: 30px !important;
+}
+.t6 tbody tr td:nth-child(3)
+{
+  width: 300px;
+  box-sizing: unset;
+  padding: 20px 40px !important;
+}
+.chart-btn button:nth-child(1)
+{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #F7934D;
+  border-radius: 7px;
+  width: 120px;
+height: 27px;
+  border: 0;
+  outline: 0;
+}
+.chart-btn
+{
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  padding-right: 25px;
+}
+.chart-btn button:nth-child(2)
+{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #5DA8AF;
+  border-radius: 7px;
+  width: 120px;
+  height: 27px;
+  border: 0;
+  outline: 0;
+}

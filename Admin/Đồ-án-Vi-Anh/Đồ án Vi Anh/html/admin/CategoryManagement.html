@@ -1,261 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Cosmos Explore</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <!-- Vendor CSS (GLOBAL MANDATORY STYLES)-->
-    <link rel="stylesheet" type="text/css" href="../../libs/metronic-admin/global/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../../libs/metronic-admin/global/plugins/bootstrap/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&amp;display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>Cosmos Explore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Vendor CSS (THEME STYLES)-->
-    <!-- link(rel='stylesheet', type='text/css', href='../../libs/metronic-admin/admin/layout/css/layout.css')-->
+  <!-- Vendor CSS (GLOBAL MANDATORY STYLES)-->
+  <link rel="stylesheet" type="text/css"
+    href="../../libs/metronic-admin/global/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="../../libs/metronic-admin/global/plugins/bootstrap/css/bootstrap.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&amp;display=swap"
+    rel="stylesheet">
 
-    <!-- Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="../../assets/css/admin.css">
+  <!-- Vendor CSS (THEME STYLES)-->
+  <!-- link(rel='stylesheet', type='text/css', href='../../libs/metronic-admin/admin/layout/css/layout.css')-->
 
-  </head>
+  <!-- Theme CSS-->
+  <link rel="stylesheet" type="text/css" href="../../assets/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/admin.css">
 
-  <body class="page-header-fixed page-quick-sidebar-over-content page-account page-account-vp">
-    <div class="page-container container">
-      <div class="page-sidebar-wrapper vetical-menu">
-        <div class="page-sidebar navbar-collapse collapse">
-          <div class="logo-page"><img src="../../assets/images/logo/logo.png" alt="index"/></div>
-          <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
-            <li>
-              <a href="home.html">
-                <div class="icon">
-                  <img class="default" src="../../assets/images/icon/home.svg" alt="index"/>
-                  <img class="active" src="../../assets/images/icon/home-ac.svg" alt="index"/>
-                </div>
-                <span class="title">Trang chủ </span>
-              </a>
-            </li>
+</head>
 
-            <li>
-              <a href="ProductManagement.html">
-                <div class="icon">
-                  <img class="default" src="../../assets/images/icon/sp.svg" alt="index"/>
-                  <img class="active" src="../../assets/images/icon/sp-ac.png" alt="index"/>
-                </div>
-                <span class="title">Quản lý sản phẩm</span>
-              </a>
-            </li>
-
-            <li><a class="menu-active" href="CategoryManagement.html">
-                <div class="icon"><img class="default" src="../../assets/images/icon/cate.svg" alt="index"/><img class="active" src="../../assets/images/icon/cate-ac.png" alt="index"/></div><span class="title">Quản lý danh mục sản phẩm</span></a></li>
-
-            <li><a href="BillManagement.html">
-                <div class="icon"><img class="default" src="../../assets/images/icon/bill.svg" alt="index"/><img class="active" src="../../assets/images/icon/bill-ac.png" alt="index"/></div><span class="title">Quản lý đơn hàng</span></a></li>
-
-            <li><a href="PostManagement.html">
-                <div class="icon"><img class="default" src="../../assets/images/icon/post.svg" alt="index"/><img class="active" src="../../assets/images/icon/post-ac.png" alt="index"/></div><span class="title">Quản lý bài đăng</span></a></li>
-
-            <li><a href="UserManagement.html">
-                <div class="icon">
-                  <img class="default" src="../../assets/images/icon/acc.svg" alt="index"/>
-                  <img class="active" src="../../assets/images/icon/acc-ac.png" alt="index"/></div><span class="title">Quản lý tài khoản</span></a></li>
-
-            <li><a href="StatisticalManagement.html">
-                <div class="icon"><img class="default" src="../../assets/images/icon/tke.svg" alt="index"/><img class="active" src="../../assets/images/icon/tke-ac.png" alt="index"/></div><span class="title">Quản lý thống kê</span></a></li>
-
-          </ul>
-        </div>
-      </div>
-      <!-- .page-sidebar-wrapper-->
-
-      <div class="page-content-wrapper">
-        <div class="page-header">
-          <div class="page-header-inner container">
-            <div class="box-search">
-              <form class="searchbox-container" action=".">
-                <input class="searchbox" type="search" name="search" autocomplete="off" placeholder="Search"/>
-                <button class="searchbutton" type="submit"><img class="icon-user" src="../../assets/images/search.svg" alt="menu"/></button>
-              </form>
-            </div>
-            <div class="navbar nav_title">
-              <div class="thumbnail-user"><img class="icon-user" src="../../assets/images/acount.svg" alt="menu"/></div>
-              <div class="information-user">
-                <p>Nguyễn Duyên<span class="old">Admin</span></p>
-                <!-- .dropdown-user-->
+<body class="page-header-fixed page-quick-sidebar-over-content page-account page-account-vp">
+  <div class="page-container container">
+    <div class="page-sidebar-wrapper vetical-menu">
+      <div class="page-sidebar navbar-collapse collapse">
+        <div class="logo-page"><img src="../../assets/images/logo/logo.png" alt="index" /></div>
+        <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+          <li>
+            <a href="home.html">
+              <div class="icon">
+                <img class="default" src="../../assets/images/icon/home.svg" alt="index" />
+                <img class="active" src="../../assets/images/icon/home-ac.svg" alt="index" />
               </div>
-            </div>
-            <!-- .top-menu-->
-          </div>
-        </div>
-        <!-- .page-header-->
-        <div class="clearfix"></div>
+              <span class="title">Trang chủ </span>
+            </a>
+          </li>
 
-        <div class="page-content">
-          <div class="container">
-            <div class="content-wrapper">
-              <section class="managementproduct">
-                <div class="title-section">
-                  <div class="title-left">
-                    <h2>QUẢN LÝ DANH MỤC SẢN PHẨM </h2>
-                  </div>
-                  <div class="title-right">
-                    <button class="btn first" data-toggle="modal" data-target="#popupCreateCate" type="button"><span>+</span>Thêm Danh mục sản phẩm</button>
-                  </div>
-                </div>
-                <div class="content-table">
-                  <table>
-<thead>
-<tr>
-<th>Mã danh mục</th>
-<th>Tên danh mục</th>
-<th>Trạng thái</th>
-<th>Thao tác</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DH1</td>
-<td>Phòng khách</td>
-<td><span class="icon-status"></span><span>Có hiệu lực</span></td>
-<td>
-<ul>
-<li>
-                  <button data-toggle="modal" data-target="#popupEditCate" type="button"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></li>
-<li>
-                  <button data-toggle="modal" data-target="#popupDeleteCate" type="button"> <i class="fa fa-trash" aria-hidden="true"></i></button></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table> 
-                </div>
-                <div class="table-bottom">
-                  <div class="bottom-left">Hiển thị từ 1 đến 7 trên tổng số 7 trang</div>
-                  <div class="bottom-right"><div class="pagination">
-<button class="btn-nav left-btn">
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="left-icon">
-<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-</svg>
-</button>
-<div class="page-numbers">
-<button class="btn-page">1</button>
-<button class="btn-page">2</button>
-<button class="btn-page btn-selected">3</button>
-<button class="btn-page">4</button>
-<button class="btn-page">5</button>
-</div>
-<button class="btn-nav right-btn">
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="right-icon">
-<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-</svg>
-</button>
-</div>
-                  </div>
-                </div>
-              </section>
+          <li>
+            <a href="ProductManagement.html">
+              <div class="icon">
+                <img class="default" src="../../assets/images/icon/sp.svg" alt="index" />
+                <img class="active" src="../../assets/images/icon/sp-ac.png" alt="index" />
+              </div>
+              <span class="title">Quản lý sản phẩm</span>
+            </a>
+          </li>
+
+          <li><a class="menu-active" href="CategoryManagement.html">
+              <div class="icon"><img class="default" src="../../assets/images/icon/cate.svg" alt="index" /><img
+                  class="active" src="../../assets/images/icon/cate-ac.png" alt="index" /></div><span class="title">Quản
+                lý danh mục sản phẩm</span>
+            </a></li>
+
+          <li><a href="BillManagement.html">
+              <div class="icon"><img class="default" src="../../assets/images/icon/bill.svg" alt="index" /><img
+                  class="active" src="../../assets/images/icon/bill-ac.png" alt="index" /></div><span class="title">Quản
+                lý đơn hàng</span>
+            </a></li>
+
+          <li><a href="PostManagement.html">
+              <div class="icon"><img class="default" src="../../assets/images/icon/post.svg" alt="index" /><img
+                  class="active" src="../../assets/images/icon/post-ac.png" alt="index" /></div><span class="title">Quản
+                lý bài đăng</span>
+            </a></li>
+
+          <li><a href="UserManagement.html">
+              <div class="icon">
+                <img class="default" src="../../assets/images/icon/acc.svg" alt="index" />
+                <img class="active" src="../../assets/images/icon/acc-ac.png" alt="index" />
+              </div><span class="title">Quản lý tài khoản</span>
+            </a></li>
+
+          <li><a href="StatisticalManagement.html">
+              <div class="icon"><img class="default" src="../../assets/images/icon/tke.svg" alt="index" /><img
+                  class="active" src="../../assets/images/icon/tke-ac.png" alt="index" /></div><span class="title">Quản
+                lý thống kê</span>
+            </a></li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- .page-sidebar-wrapper-->
+
+    <div class="page-content-wrapper">
+      <div class="page-header">
+        <div class="page-header-inner container">
+          <div class="box-logo">
+            <img src="../../assets/images/logo/logo.png" alt="">
+          </div>
+          <div class="box-search">
+            <form class="searchbox-container" action=".">
+              <input class="searchbox" type="search" name="search" autocomplete="off" placeholder="Search" />
+              <button class="searchbutton" type="submit"><img class="icon-user" src="../../assets/images/search.svg"
+                  alt="menu" /></button>
+            </form>
+          </div>
+          <div class="box-noti">
+            <img src="../../assets/images/noti.png" alt="">
+          </div>
+          <div class="navbar nav_title">
+            <div class="thumbnail-user"><img class="icon-user" src="../../assets/images/acount.svg" alt="menu" /></div>
+            <div class="information-user">
+              <p>Nguyễn Duyên<span class="old">Admin</span></p>
+              <img src="../../assets/images/Vector.svg" alt="">
+              <!-- .dropdown-user-->
             </div>
           </div>
-          <!-- .member-main-->
+          <!-- .top-menu-->
         </div>
       </div>
-      <!-- .page-content-->
-    </div>
-    <!-- .member-->
-    <!--.page-container-->
+      <!-- .page-header-->
+      <div class="clearfix"></div>
 
-    <!-- include ../includes/footer.jade-->
-
-    <div class="modal modal-dialog-centered fade popup_customer" id="popupCreateCate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal" aria-hidden="true"> <span> <i class="fa fa-times" aria-hidden="true"></i></span></button>
+      <div class="page-content">
+        <div class="container">
+          <div class="content-wrapper">
+            <section class="managementproduct">
+              <div class="title-section">
+                <div class="title-left">
+                  <h2>QUẢN LÝ DANH MỤC SẢN PHẨM </h2>
+                </div>
+                <div class="title-right">
+                  <button class="btn first" data-toggle="modal" data-target="#popupCreateCate"
+                    type="button"><span>+</span>Thêm Danh mục sản phẩm</button>
+                </div>
+              </div>
+              <div class="content-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Mã danh mục</th>
+                      <th>Tên danh mục</th>
+                      <th>Trạng thái</th>
+                      <th>Thao tác</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>DH1</td>
+                      <td>Phòng khách</td>
+                      <td><span class="icon-status"></span><span>Có hiệu lực</span></td>
+                      <td>
+                        <ul>
+                          <li>
+                            <button data-toggle="modal" data-target="#popupEditCate" type="button"><i
+                                class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                          </li>
+                          <li>
+                            <button data-toggle="modal" data-target="#popupDeleteCate" type="button"> <i
+                                class="fa fa-trash" aria-hidden="true"></i></button>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>DH2</td>
+                      <td>Phòng ngủ</td>
+                      <td><span class="icon-status"></span><span>Có hiệu lực</span></td>
+                      <td>
+                        <ul>
+                          <li>
+                            <button data-toggle="modal" data-target="#popupEditCate" type="button"><i
+                                class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                          </li>
+                          <li>
+                            <button data-toggle="modal" data-target="#popupDeleteCate" type="button"> <i
+                                class="fa fa-trash" aria-hidden="true"></i></button>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>DH3</td>
+                      <td>Phòng bếp</td>
+                      <td><span class="icon-status"></span><span>Có hiệu lực</span></td>
+                      <td>
+                        <ul>
+                          <li>
+                            <button data-toggle="modal" data-target="#popupEditCate" type="button"><i
+                                class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                          </li>
+                          <li>
+                            <button data-toggle="modal" data-target="#popupDeleteCate" type="button"> <i
+                                class="fa fa-trash" aria-hidden="true"></i></button>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>DH4</td>
+                      <td>Phòng làm việc</td>
+                      <td><span class="icon-status"></span><span>Có hiệu lực</span></td>
+                      <td>
+                        <ul>
+                          <li>
+                            <button data-toggle="modal" data-target="#popupEditCate" type="button"><i
+                                class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                          </li>
+                          <li>
+                            <button data-toggle="modal" data-target="#popupDeleteCate" type="button"> <i
+                                class="fa fa-trash" aria-hidden="true"></i></button>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-bottom">
+                <div class="bottom-left">Hiển thị từ 1 đến 7 trên tổng số 7 trang</div>
+                <div class="bottom-right">
+                  <div class="pagination">
+                    <button class="btn-nav left-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="left-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                      </svg>
+                    </button>
+                    <div class="page-numbers">
+                      <button class="btn-page">1</button>
+                      <button class="btn-page">2</button>
+                      <button class="btn-page btn-selected">3</button>
+                      <button class="btn-page">4</button>
+                      <button class="btn-page">5</button>
+                    </div>
+                    <button class="btn-nav right-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="right-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
-          <div class="modal-body">
-            <h5 class="title-popup">Thêm Danh mục sản phẩm</h5>
-            <div class="content-popup-detail"><form action="index.html" method="post">
+        </div>
+        <!-- .member-main-->
+      </div>
+    </div>
+    <!-- .page-content-->
+  </div>
+  <!-- .member-->
+  <!--.page-container-->
+
+  <!-- include ../includes/footer.jade-->
+
+  <div class="modal modal-dialog-centered fade popup_customer" id="popupCreateCate" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"> <span> <i class="fa fa-times"
+                aria-hidden="true"></i></span></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="title-popup">Thêm Danh mục sản phẩm</h5>
+          <div class="content-popup-detail">
+            <form action="index.html" method="post">
               <div class="input-group"><label for="cate_name">Mã Danh mục</label>
-<input type="text" id="cate_name" name="product_name">
+                <input type="text" id="cate_name" name="product_name">
               </div>
               <div class="input-group"><label for="cate_name">Tên danh mục</label>
-<input type="text" id="cate_name" name="product_number">
+                <input type="text" id="cate_name" name="product_number">
               </div>
               <div class="input-group"><label for="cate_name">Trạng thái</label>
-<input type="text" id="cate_name" name="product_price">
-              </div></form>
-            </div>
+                <input type="text" id="cate_name" name="product_price">
+              </div>
+            </form>
           </div>
-          <div class="modal-footer">
-            <div class="list-button">
-              <button class="btn btn-huy close" type="button" data-dismiss="modal" aria-hidden="true"> HỦY BỎ</button>
-              <button class="btn btn-save" data-toggle="modal" data-target="#popupConfirmFinish" type="button">LƯU THAY ĐỔI</button>
-            </div>
+        </div>
+        <div class="modal-footer">
+          <div class="list-button">
+            <button class="btn btn-huy close" type="button" data-dismiss="modal" aria-hidden="true"> HỦY BỎ</button>
+            <button class="btn btn-save" data-toggle="modal" data-target="#popupConfirmFinish" type="button">LƯU THAY
+              ĐỔI</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal modal-dialog-centered fade popup_customer" id="popupEditCate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal" aria-hidden="true"> <span> <i class="fa fa-times" aria-hidden="true"></i></span></button>
-          </div>
-          <div class="modal-body">
-            <h5 class="title-popup">Sửa danh mục sản phẩm</h5>
-            <div class="content-popup-detail"><form action="index.html" method="post">
+  </div>
+  <div class="modal modal-dialog-centered fade popup_customer" id="popupEditCate" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"> <span> <i class="fa fa-times"
+                aria-hidden="true"></i></span></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="title-popup">Sửa danh mục sản phẩm</h5>
+          <div class="content-popup-detail">
+            <form action="index.html" method="post">
               <div class="input-group"><label for="cate_name">Mã danh mục</label>
-<input type="text" id="cate_name" name="product_name" value = "Ghế Sofa 35SP01-SP01">
+                <input type="text" id="cate_name" name="product_name" value="Ghế Sofa 35SP01-SP01">
               </div>
               <div class="input-group"><label for="cate_name">Tên danh mục</label>
-<input type="text" id="cate_name" name="cate_name" value ="100">
+                <input type="text" id="cate_name" name="cate_name" value="100">
               </div>
               <div class="input-group"><label for="cate_name">Trạng thái</label>
-<input type="text" id="cate_name" name="cate_name" value=35.000.000>
-              </div></form>
-            </div>
+                <input type="text" id="cate_name" name="cate_name" value=35.000.000>
+              </div>
+            </form>
           </div>
-          <div class="modal-footer">
-            <div class="list-button">
-              <button class="btn btn-huy" data-toggle="modal" data-target="#popupConfirmFinish" type="button">HỦY BỎ</button>
-              <button class="btn btn-save" data-toggle="modal" data-target="#popupConfirmFinish" type="button">LƯU THAY ĐỔI</button>
-            </div>
+        </div>
+        <div class="modal-footer">
+          <div class="list-button">
+            <button class="btn btn-huy" data-toggle="modal" data-target="#popupConfirmFinish" type="button">HỦY
+              BỎ</button>
+            <button class="btn btn-save" data-toggle="modal" data-target="#popupConfirmFinish" type="button">LƯU THAY
+              ĐỔI</button>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal modal-dialog-centered fade popup_customer popup-delete" id="popupDeleteCate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button class="close" type="button" data-dismiss="modal" aria-hidden="true"> <span> <i class="fa fa-times" aria-hidden="true"></i></span></button>
+  </div>
+  <div class="modal modal-dialog-centered fade popup_customer popup-delete" id="popupDeleteCate" tabindex="-1"
+    role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal" aria-hidden="true"> <span> <i class="fa fa-times"
+                aria-hidden="true"></i></span></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="title-popup"> <span> </span><span>Xóa danh mục !</span></h5>
+          <div class="content-popup-detail">
+            <div class="cnt-delete"> </div>
+            <p>Bạn có muốn xóa sản phẩm không?</p>
           </div>
-          <div class="modal-body">
-            <h5 class="title-popup"> <span> </span><span>Xóa danh mục !</span></h5>
-            <div class="content-popup-detail">
-              <div class="cnt-delete"> </div>
-              <p>Bạn có muốn xóa sản phẩm không?</p>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <div class="list-button">
-              <button class="btn btn-huy" data-toggle="modal" data-target="#popupConfirmFinish" type="button">HỦY BỎ</button>
-              <button class="btn btn-save" data-toggle="modal" data-target="#popupConfirmFinish" type="button">LƯU THAY ĐỔI</button>
-            </div>
+        </div>
+        <div class="modal-footer">
+          <div class="list-button">
+            <button class="btn btn-huy" data-toggle="modal" data-target="#popupConfirmFinish" type="button">HỦY
+              BỎ</button>
+            <button class="btn btn-save" data-toggle="modal" data-target="#popupConfirmFinish" type="button">LƯU THAY
+              ĐỔI</button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Vendor jQuery (CORE PLUGINS - METRONIC)-->
-    <script type="text/javascript" src="../../libs/metronic-admin/global/plugins/jquery.min.js"></script>
-    <script type="text/javascript" src="../../libs/metronic-admin/global/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../libs/metronic-admin/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.canvas.js"></script>
+  <!-- Vendor jQuery (CORE PLUGINS - METRONIC)-->
+  <script type="text/javascript" src="../../libs/metronic-admin/global/plugins/jquery.min.js"></script>
+  <script type="text/javascript" src="../../libs/metronic-admin/global/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript"
+    src="../../libs/metronic-admin/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.canvas.js"></script>
 
-    <!-- Theme Script-->
-    <script type="text/javascript" src="https://kit.fontawesome.com/8b9922aecc.js"></script>
-    <script type="text/javascript" src="../../assets/js/admin.js"></script>
-  </body>
+  <!-- Theme Script-->
+  <script type="text/javascript" src="https://kit.fontawesome.com/8b9922aecc.js"></script>
+  <script type="text/javascript" src="../../assets/js/admin.js"></script>
+</body>
+
 </html>
