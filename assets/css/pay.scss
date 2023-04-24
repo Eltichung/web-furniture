@@ -331,3 +331,17 @@
     font-weight: 500;
     color: #4B4B4B;
 }
+@media only screen and (max-width: 500px){
+    .pay 
+    {
+        flex-direction: column;
+        margin-bottom: 40px;
+        .col-xs-6,.col-xs-5
+        {
+            width: 100%;
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+    }
+}
+    

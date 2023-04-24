@@ -33,6 +33,15 @@
     </div>
     <div class="tool container flex-r">
         <div class="tool-img col-xs-3">
+            <div class="bar">
+                <img src="./assets/img/bar.png" alt="">
+            </div>
+            <a href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
+        </div>
+        <div class="tool-img col-xs-3">
+            <div class="bar">
+                <img src="./assets/img/bar.png" alt="">
+            </div>
             <a href="./index.html"><img src="./assets/img/logo.png" alt=""></a>
         </div>
         <div class="tool-item col-xs-9 flex-r ">
@@ -94,11 +103,14 @@
             <div class="tool-item-icon flex-r">
                 <img src="./assets/img/flag.png" alt="">
             </div>
-            <div class="bar">
-                <img src="./assets/img/bar.png" alt="">
-            </div>
         </div>
         
+    </div>
+    <div class="tool-res container flex-r">
+        <input type="text" placeholder="Tìm kiếm">
+        <div class="search-res">
+            <img src="./assets/img/s2.png" alt="">
+        </div>
     </div>
     <div class="menu-top ">
         <ul class="menu container flex-r">
@@ -229,30 +241,34 @@
                 <img src="./assets/img/gallery77.png" alt="">
                 <p>Bàn cafe</p>
             </div>
-            <div class="box-gallery-item flex-c">
+            <div class="box-gallery-item flex-c an">
                 <img src="./assets/img/gallery8.png" alt="">
                 <img src="./assets/img/gallery88.png" alt="">
                 <p>Tủ kệ TV</p>
             </div>
-            <div class="box-gallery-item flex-c">
+            <div class="box-gallery-item flex-c an">
                 <img src="./assets/img/gallery9.png" alt="">
                 <img src="./assets/img/gallery99.png" alt="">
                 <p>Tủ giày</p>
             </div>
-            <div class="box-gallery-item flex-c">
+            <div class="box-gallery-item flex-c an">
                 <img src="./assets/img/gallery10.png" alt="">
                 <img src="./assets/img/gallery101.png" alt="">
                 <p>Bàn học</p>
             </div>
-            <div class="box-gallery-item flex-c">
+            <div class="box-gallery-item flex-c an">
                 <img src="./assets/img/gallery11a.png" alt="">
                 <img src="./assets/img/gallery111.png" alt="">
                 <p>Giá sách</p>
             </div>
-            <div class="box-gallery-item flex-c">
+            <div class="box-gallery-item flex-c an">
                 <img src="./assets/img/gallery12.png" alt="">
                 <img src="./assets/img/gallery121.png" alt="">
                 <p>Đèn</p>
+            </div>
+            <div class="box-gallery-item flex-c xem">
+                <img src="./assets/img/xem.png" alt="">
+                <p>Xem thêm</p>
             </div>
         </div>
     </div>
@@ -433,7 +449,7 @@
         </div>
     </div>
     <div class="box container">
-        <h1>Sản phẩm mới nhất</h1>
+        <h1>Sản phẩm bán chạy</h1>
         <a href="#">Xem thêm</a>
         <div class="box-product owl-carousel owl-theme">
             <div class="box-product-item ">
@@ -604,6 +620,30 @@
                     <div>
                         <img src="./assets/img/product-cart.png" alt="">
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box container">
+        <h1>Sản phẩm nổi bật</h1>
+        <div class="box-product-gird">
+            <div class="wrapper">
+                <div class="box-product-grid-item">
+                    <img src="./assets/img/Rectangle 94.png" alt="">
+                </div>
+                <div class="box-product-grid-item">
+                    <img src="./assets/img/Rectangle 96.png" alt="">
+                </div>
+            </div>
+            <div class="wrapper v2">
+                <div class="box-product-grid-item full">
+                    <img src="./assets/img/Rectangle 95.png" alt="">
+                </div>
+                <div class="box-product-grid-item">
+                    <img src="./assets/img/Rectangle 97.png" alt="">
+                </div>
+                <div class="box-product-grid-item">
+                    <img src="./assets/img/Rectangle 98.png" alt="">
                 </div>
             </div>
         </div>
@@ -963,7 +1003,7 @@ View settings for more info. -->
             loop: false,
             responsive: {
                 0: {
-                    items: 1
+                    items: 2.5
                 },
                 650: {
                     items: 3
@@ -984,10 +1024,10 @@ View settings for more info. -->
             navClass: ['dotL', 'dotR'],
             responsive: {
                 0: {
-                    items: 1
+                    items: 1.5
                 },
                 980: {
-                    items: 2
+                    items: 2.5
                 },
                 1280: {
                     items: 3
